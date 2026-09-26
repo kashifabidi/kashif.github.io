@@ -4,8 +4,8 @@
 
 | Code | Name | Status | Signature colour | Height |
 |---|---|---|---|---|
-| MO | Mo | DRAFT | Mustard / ochre | 170 cm (5'7") |
-| LK | Lanky | DRAFT | Teal / petrol blue | 196 cm (6'5") |
+| MO | Mo | LOCKED (face) | Mustard / ochre | 170 cm (5'7") |
+| LK | Lanky | LOCKED (face) | Teal / petrol blue | 196 cm (6'5") |
 
 ## Height chart
 
@@ -29,13 +29,13 @@ different. Mo and Lanky are built to be opposites on every axis:
 | Axis | Mo | Lanky |
 |---|---|---|
 | Height | Short | Very tall |
-| Build | Solid, soft, broad | Thin, narrow |
-| Face | Round | Long, angular |
+| Build | Stocky, broad | Thin, narrow |
+| Face | Broad, strong jaw | Long, narrow, angular |
 | Skin | Warm medium-brown | Very pale, freckled |
-| Hair | Black, short, neat | Copper-ginger, messy, wavy |
-| Facial hair | Short neat beard | Patchy stubble |
+| Hair | Black, very short, skin fade | Copper-ginger curls to the collar |
+| Facial hair | Full short black beard | Short uneven ginger beard |
 | Colour | Mustard | Teal |
-| Posture | Relaxed, planted | Stooped, one leg |
+| Posture | Square, planted | Stooped or sprawled |
 
 New characters must differ from **every** existing one on at least 3 of these
 axes, and use a new signature colour.
@@ -68,7 +68,7 @@ the first sentence to "Image 1 is Mo's face, image 2 is Lanky's face, image 3
 shows both at true height."
 
 ```
-A horizontal 16:9 photograph. Images 1 and 2 are Mo, images 3 and 4 are
+A vertical 9:16 photograph. Images 1 and 2 are Mo, images 3 and 4 are
 Lanky, and image 5 shows them together at their true heights. Keep each man's
 face, body, skin, hair and clothing exactly as in his own images, and keep
 each man's features entirely his own.
@@ -85,11 +85,14 @@ the top of Mo's head reaches Lanky's chin.
 frame and Lanky is on the right. [What each one is doing and their
 expressions.]
 
-[Shot size], shot on a 35mm lens at the eye level of a 175 cm person,
+[Shot size, e.g. medium two-shot with both men's full heads in frame], shot on a 35mm lens at the eye level of a 175 cm person,
 [lighting: e.g. cold blue streetlight from the left and warm shop light from
 behind]. Unretouched skin with visible pores, fine lines and natural
 unevenness. A realistic photograph taken on a full-frame digital camera.
 ```
+
+Add the location block from `locations/` for the set, and attach that set's
+anchor as one more image (or drop LK_A4/MO_A4 on Flash to make room).
 
 Tips:
 - Keep the same left/right positions for a whole scene (180° rule). It also

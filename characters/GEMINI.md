@@ -52,15 +52,24 @@ single reference slot.
 
 ## 4. Aspect ratio
 
+**Project default: vertical 9:16**, stills and video alike.
+
 | Image | Ratio | How |
 |---|---|---|
 | Face anchors (A1–A3, A6) | 3:4 portrait | AI Studio setting, or write "vertical 3:4 portrait photograph" |
 | Full-body anchors (A4, A5) | 9:16 | as above |
-| Shots for video | **16:9** (or 9:16 for vertical) | Match the Veo output you want |
+| Shots for video | **9:16** | Start every shot prompt with "A vertical 9:16 photograph" |
+| Cast lineup, set wides | 16:9 | Reference only, never animated |
+
+**The still and the video must have the same ratio.** The video tool picks the
+output shape, not the still. When a 9:16 still went into a 16:9 Veo clip in
+the first test, Veo reframed it and Mo's head was cut off for the whole clip.
+Before generating, set the video to 9:16 (Flow lets you choose; if the
+Gemini app only gives you landscape, animate in Flow instead).
 
 Watch out: when you edit from an attached image, Gemini often **keeps that
-image's aspect ratio**. For a 16:9 shot built from 3:4 anchors, either set the
-ratio in AI Studio, or attach a plain blank 16:9 image **last** and say "use
+image's aspect ratio**. For a 9:16 shot built from 3:4 anchors, either set the
+ratio in AI Studio, or attach a plain blank 9:16 image **last** and say "use
 the frame size of the last image".
 
 ## 5. Drift control
@@ -74,15 +83,20 @@ the frame size of the last image".
   "Keep everything in this image exactly the same. Only adjust the face of the
   man on the left so it matches image 1."
 - **Watermark:** Gemini images carry an invisible SynthID mark, and on some
-  plans a small visible sparkle in a corner. Keep important detail away from
-  the bottom-right, or crop before animating.
+  plans a small visible sparkle in the bottom-right corner. **Crop it off every
+  still before animating.** If you don't, Veo bakes it into every frame of the
+  clip, and it can't be removed afterwards (this happened in the first test).
+- **Mirrored marks:** Gemini sometimes flips a mark to the other side (it
+  flipped Lanky's neck mole in the first shoot). Check sides on every image
+  and fix with a one-change edit.
 
 ## 6. Build a Gem (saves you pasting everything)
 
 Create a Gem called **Mo & Lanky Studio**:
 1. Gemini → Gems → New Gem.
 2. Paste `gem-instructions.md` into **Instructions**.
-3. Upload `mo/mo.md`, `lanky/lanky.md` and `CAST.md` as **knowledge files**.
+3. Upload `GEMINI.md`, `mo/mo.md`, `lanky/lanky.md`, `CAST.md` and every file in
+   `locations/` as **knowledge files**.
    If your plan allows images as knowledge, also add each character's A1 and
    A4. Otherwise attach them in each chat.
 4. In the Gem, you just write a short brief such as *"SC02 SH04: Mo and Lanky
@@ -96,7 +110,8 @@ When you add a character, upload their bible to the Gem too.
 **Best identity: use the approved still as the first frame.**
 
 - **Gemini app:** attach the still, choose video, and use the Veo prompt
-  below. You get a short clip (about 8 seconds) with sound.
+  below. You get a short clip (8–10 seconds) with sound. Check the output is
+  9:16 before you generate.
 - **Flow → Frames to Video:** approved still as start frame. Optionally make a
   second still (same chat, "same shot, 3 seconds later, he has turned to face
   the camera") as the **end frame** for a controlled move.
@@ -107,22 +122,37 @@ When you add a character, upload their bible to the Gem too.
 
 Veo prompt template:
 ```
-[Shot size and camera move, e.g. "Slow push-in, medium shot, handheld feel"].
-[Who does what, in order, using names and one visible trait each, e.g.
-"Mo, the short bearded man in the mustard jacket, folds his arms and
-raises one eyebrow. Lanky, the very tall freckled ginger man in the teal
-track jacket, rubs the back of his neck."]
-Dialogue: Mo says in a low, dry voice: "You said five minutes."
-Sound: [ambient sound, e.g. "rain on a tin bus-shelter roof, distant traffic"].
-Keep both men's faces, clothing and heights exactly as in the first frame.
-Realistic live-action footage, natural motion.
+Vertical 9:16. Static locked-off camera. [Shot size, e.g. "Medium two-shot"].
+Both men's full heads stay in frame for the entire shot.
+[Who does what, in order, using the Veo tag from each bible, e.g.
+"Mo, the stocky bearded man in the mustard jacket, lowers his clipboard and
+stares at Lanky. Lanky, the very tall freckled man with curly ginger hair in
+the teal jacket, holds a can against his forehead and doesn't open his eyes."]
+Props: [every prop and who holds it, e.g. "Mo holds the same brown clipboard
+in both hands throughout. Lanky holds one silver drinks can in his right
+hand."]
+Screens: [what every screen shows, e.g. "The monitor shows a video editing
+timeline with no people on screen."]
+Dialogue: Mo says in a low, dry Birmingham voice: "You said five minutes."
+Sound: [ambient sound, e.g. "quiet room tone, a distant car outside"].
+Keep both men's faces, hair, clothing and heights exactly as in the first
+frame. Realistic live-action footage, natural motion.
 ```
 
-Veo tips:
-- Keep each clip to **one action** per character. Big head turns and fast
-  motion are where faces drift.
-- Refer to each person by **name + one visible trait** ("Lanky, the tall
-  ginger man"). Veo doesn't know the names on their own.
-- Put dialogue in quotes after a **fixed voice description** (in each bible).
-  Veo voices still vary between clips. For a series, plan to replace voices in
-  the edit with one consistent voice per character.
+Veo rules (learned from the first test clips):
+- **Match the ratio** of the still and the video (see §4).
+- **Lock the camera and the framing** unless the shot needs a move. Veo
+  otherwise reframes, and a head can leave the frame.
+- **Name every prop and say it stays the same.** In the first test Mo's
+  clipboard turned into loose paper halfway through.
+- **Say what every screen shows.** A monitor with no instruction showed an
+  unscripted person.
+- **Faces at least a quarter of the frame height for dialogue.** Wide shots
+  (face under ~10% of frame height) are fine for silent beats only.
+- **One action per character** per clip. Big head turns and fast motion are
+  where faces drift.
+- **Refer to each person by their Veo tag** (name + visible traits). Veo
+  doesn't know the names on their own.
+- **Voices:** put dialogue in quotes after the fixed voice description from
+  each bible. Veo voices still vary between clips, so for a series plan to
+  replace voices in the edit with one consistent voice per character.

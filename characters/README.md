@@ -19,6 +19,9 @@ characters/
 ├── gem-instructions.md   ← paste into a Gem so it writes prompts for you
 ├── _TEMPLATE.md          ← copy this to add a new character
 ├── CAST.md               ← heights, contrasts, lineup, two-shot template
+├── locations/
+│   ├── studio.md         ← set bible: fixed room description, props, screens
+│   └── anchors/          ← STU_A1.png (wide), STU_A2.png (vertical)
 ├── CAST_LINEUP.png       ← whole cast at true height (made after anchors lock)
 ├── mo/
 │   ├── mo.md             ← Mo's bible (DNA, voice, wardrobe, anchor prompts)
@@ -55,24 +58,25 @@ make a new version (`MO v2`). Keep the old anchors, renamed `MO_v1_A1.png`.
    short brief. It returns the images to attach, the image prompt, the Veo
    prompt and a continuity checklist.
    Without the Gem, fill in the template below yourself.
-2. New Gemini chat **per scene**. Attach the anchors it lists, paste the image
-   prompt.
+2. New Gemini chat **per scene**. Attach the anchors it lists (characters +
+   location), paste the image prompt.
 3. Check the result against the checklist. Fix single problems with a
-   one-change edit. Save to `shots/`.
+   one-change edit. **Crop off the Gemini watermark.** Save to `shots/`.
 4. Animate in Veo with the approved still as the **first frame**
-   (Gemini app photo → video, or Flow → Frames to Video).
+   (Flow → Frames to Video, or the Gemini app). **Output must be 9:16 to
+   match the still.** Use the Veo template and rules in `GEMINI.md` §7.
 
 ### Single-character shot template
 
 Attach `XX_A1.png` and `XX_A4.png`.
 ```
-A horizontal 16:9 photograph. Images 1 and 2 are [NAME]; keep his face, body,
+A vertical 9:16 photograph. Images 1 and 2 are [NAME]; keep his face, body,
 skin, hair and clothing exactly as in them.
 
 [DNA block, pasted exactly]
 
-He wears [wardrobe wording]. [Scene: where and when.] [Action and
-expression.]
+He wears [wardrobe wording]. [Set block from locations/, or a scene
+description.] [Action and expression.] [Props and who holds them.]
 
 [Shot size], shot on a [85mm for close-ups / 35–50mm for mediums and wides]
 lens at [camera height], [lighting]. Unretouched skin with visible pores, fine
@@ -106,3 +110,8 @@ Two-shot template: see `CAST.md`. Veo template: see `GEMINI.md` §7.
 3. Add them to the roster and height chart in `CAST.md`.
 4. Run Phase 1, then remake `CAST_LINEUP.png`.
 5. Upload their bible to the Gem's knowledge files.
+
+## Adding a new location
+
+Copy `locations/studio.md`, write a new set block, make its two empty-room
+anchors, and upload it to the Gem.
