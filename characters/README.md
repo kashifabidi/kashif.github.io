@@ -19,6 +19,7 @@ characters/
 ├── gem-instructions.md   ← paste into a Gem so it writes prompts for you
 ├── _TEMPLATE.md          ← copy this to add a new character
 ├── CAST.md               ← heights, contrasts, lineup, two-shot template
+├── episodes/           ← scripts and shot lists (EP01-tall-mate.md …)
 ├── locations/
 │   ├── studio.md         ← set bible: fixed room description, props, screens
 │   └── anchors/          ← STU_A1.png (wide), STU_A2.png (vertical)
