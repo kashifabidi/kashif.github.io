@@ -29,13 +29,13 @@ different. Mo and Lanky are built to be opposites on every axis:
 | Axis | Mo | Lanky |
 |---|---|---|
 | Height | Short | Very tall |
-| Build | Stocky, broad | Thin, narrow |
+| Build | Solid, soft, broad | Thin, narrow |
 | Face | Round | Long, angular |
 | Skin | Warm medium-brown | Very pale, freckled |
-| Hair | Black, short fade | Copper-ginger, messy, wavy |
-| Facial hair | Full short beard | Patchy stubble |
+| Hair | Black, short, neat | Copper-ginger, messy, wavy |
+| Facial hair | Short neat beard | Patchy stubble |
 | Colour | Mustard | Teal |
-| Posture | Square, planted | Stooped, one leg |
+| Posture | Relaxed, planted | Stooped, one leg |
 
 New characters must differ from **every** existing one on at least 3 of these
 axes, and use a new signature colour.

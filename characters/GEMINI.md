@@ -109,7 +109,7 @@ Veo prompt template:
 ```
 [Shot size and camera move, e.g. "Slow push-in, medium shot, handheld feel"].
 [Who does what, in order, using names and one visible trait each, e.g.
-"Mo, the stocky bearded man in the mustard jacket, folds his arms and
+"Mo, the short bearded man in the mustard jacket, folds his arms and
 raises one eyebrow. Lanky, the very tall freckled ginger man in the teal
 track jacket, rubs the back of his neck."]
 Dialogue: Mo says in a low, dry voice: "You said five minutes."
