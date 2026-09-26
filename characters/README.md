@@ -1,92 +1,108 @@
 # Character Bible
 
 The single source of truth for every recurring character. Built for photoreal,
-human-scale characters generated in Gemini (image) and animated in any
-image-to-video tool.
+human-scale characters made entirely in Google's tools: **Gemini image
+(Nano Banana)** for stills and **Veo** (Gemini app or Flow) for video.
 
 **The rule:** the text blocks and the approved anchor images in this folder are
 the character. If a shot doesn't match them, the shot is wrong, not the bible.
+
+Start with **`GEMINI.md`**. It covers which model to use, how Gemini reads
+prompts, aspect ratios, reference limits, the Gem setup and Veo.
 
 ## Folder layout
 
 ```
 characters/
-├── README.md            ← this workflow
-├── _TEMPLATE.md         ← copy this to add a new character
-├── CAST.md              ← heights, contrasts, two-shot rules for the whole cast
+├── README.md             ← this workflow
+├── GEMINI.md             ← Gemini + Veo playbook
+├── gem-instructions.md   ← paste into a Gem so it writes prompts for you
+├── _TEMPLATE.md          ← copy this to add a new character
+├── CAST.md               ← heights, contrasts, lineup, two-shot template
+├── CAST_LINEUP.png       ← whole cast at true height (made after anchors lock)
 ├── mo/
-│   ├── mo.md            ← Mo's bible (DNA block, wardrobe, anchor prompts)
-│   └── anchors/         ← approved anchor images: MO_A1.png, MO_A2.png …
+│   ├── mo.md             ← Mo's bible (DNA, voice, wardrobe, anchor prompts)
+│   └── anchors/          ← MO_A1.png … MO_A6c.png
 ├── lanky/
 │   ├── lanky.md
-│   └── anchors/         ← LK_A1.png, LK_A2.png …
-└── shots/               ← finished stills, named SC01_SH03_v2.png
+│   └── anchors/          ← LK_A1.png … LK_A6c.png
+└── shots/                ← SC01_SH03_v2.png (stills) and .mp4 (Veo clips)
 ```
 
 ## Workflow
 
 ### Phase 1: Build each character (once)
 
-1. Open a **new** Gemini chat for the character.
-2. Run prompt **A1** (front portrait) from their bible. Regenerate until it's
-   right. A1 is the master face, so everything else copies it.
-3. In the **same chat**, run A2 → A6 in order. Each one says "same person as the
-   previous image."
-4. Reject any image where the face drifts from A1. Don't try to fix it by
-   editing; just regenerate.
-5. Save the approved images into `anchors/` with the exact file names listed.
-6. Tick the approval checklist in the bible and set status to `LOCKED`.
+1. Open a **new Gemini chat** with the **Pro image model**
+   (Nano Banana Pro) selected. Use AI Studio if you want to set aspect ratio
+   and resolution directly.
+2. Paste prompt **A1** from the bible. Regenerate until it's right.
+   A1 is the master face, and everything else copies it.
+3. In the **same chat**, run A2 → A6 in order.
+4. Reject any image where the face drifts from A1. Regenerate it rather than
+   trying to fix it.
+5. Save approved images into `anchors/` with the exact file names listed.
+6. Tick the approval checklist and set the status to `LOCKED`.
+7. When every character is locked, make `CAST_LINEUP.png` (prompt in
+   `CAST.md`).
 
 After a character is `LOCKED`, the DNA block and anchors never change. Changes
-make a new version (`MO v2`). Keep old anchors, rename to `MO_v1_A1.png`.
+make a new version (`MO v2`). Keep the old anchors, renamed `MO_v1_A1.png`.
 
 ### Phase 2: Make shots (every time)
 
-1. New Gemini chat per scene (not per project; long chats drift).
-2. Attach anchors: **A1 + A4** for a single character. For a two-shot, attach
-   **A1 + A4 of each** (4 images) and name them in the prompt.
-3. Use the shot prompt template below.
-4. Check against the approval checklist. Save to `shots/`.
-5. Animate: use the approved still as the **first frame** in image-to-video.
-   Never give the video tool a sheet or a raw text description.
+1. Open your **Mo & Lanky Studio** Gem (see `GEMINI.md` §6) and give it a
+   short brief. It returns the images to attach, the image prompt, the Veo
+   prompt and a continuity checklist.
+   Without the Gem, fill in the template below yourself.
+2. New Gemini chat **per scene**. Attach the anchors it lists, paste the image
+   prompt.
+3. Check the result against the checklist. Fix single problems with a
+   one-change edit. Save to `shots/`.
+4. Animate in Veo with the approved still as the **first frame**
+   (Gemini app photo → video, or Flow → Frames to Video).
 
-### Shot prompt template
+### Single-character shot template
 
+Attach `XX_A1.png` and `XX_A4.png`.
 ```
-Image 1 and 2 are [NAME]. Keep his exact face, build, skin, hair and
-[WARDROBE CODE] outfit, identical to the reference images.
+A horizontal 16:9 photograph. Images 1 and 2 are [NAME]; keep his face, body,
+skin, hair and clothing exactly as in them.
 
-[DNA BLOCK, pasted exactly]
+[DNA block, pasted exactly]
 
-Scene: [where, time of day]
-Action: [what he's doing, expression]
-Camera: [shot size, lens, angle], photographed on a full-frame camera,
-natural light, real skin texture, no retouching, no beauty filter.
-Change only the scene, pose and expression.
+He wears [wardrobe wording]. [Scene: where and when.] [Action and
+expression.]
+
+[Shot size], shot on a [85mm for close-ups / 35–50mm for mediums and wides]
+lens at [camera height], [lighting]. Unretouched skin with visible pores, fine
+lines and natural unevenness. A realistic photograph taken on a full-frame
+digital camera.
 ```
 
-Two-shot version: see `CAST.md`.
+Two-shot template: see `CAST.md`. Veo template: see `GEMINI.md` §7.
 
 ## Realism rules (for all characters)
 
-- Always include: *real skin texture, visible pores, natural asymmetry, no
-  retouching, no beauty filter, photographed not rendered*.
+- Always end image prompts with: *Unretouched skin with visible pores, fine
+  lines and natural unevenness. A realistic photograph taken on a full-frame
+  digital camera.*
+- Use positive wording only. Gemini often ignores or inverts "no X".
 - Never use: *beautiful, perfect, flawless, handsome, stunning, 8k,
-  hyper-detailed, cinematic masterpiece*. These words push faces towards a
-  generic "AI face" and wipe out identity.
-- Give lens and shot size (35mm / 50mm / 85mm). Lens changes face shape, so
-  use **85mm for close-ups** and **35–50mm for mediums/wides**, and stay
-  consistent.
-- Every character has **asymmetric anchors** (a scar, a mole on one side, a
-  chipped tooth). They're what makes the model see one specific person.
-- Faces smaller than ~15% of frame height lose identity. For wide shots, plan a
-  face-fix pass or cut to a closer shot.
+  hyper-detailed, masterpiece*. These words push faces towards a generic
+  "AI face" and wipe out identity.
+- Always name a lens: **85mm for close-ups**, **35–50mm for mediums and
+  wides**. Lens changes face shape, so stay consistent.
+- Every character has **asymmetric anchors** with a set side. Gemini
+  sometimes mirrors them, so check the side on every image.
+- Faces smaller than ~15% of frame height lose identity. For wide shots, cut
+  to a closer shot, or do a face edit on the still before animating.
 
 ## Adding a new character
 
-1. Copy `_TEMPLATE.md` into `characters/<name>/<name>.md`.
-2. Give them a 2-letter code (MO, LK, …) and check in `CAST.md` that they
-   contrast with everyone else: different skin tone or hair or build, and a
-   different signature colour.
-3. Add them to the height chart in `CAST.md`.
-4. Run Phase 1.
+1. Copy `_TEMPLATE.md` to `characters/<name>/<name>.md`.
+2. Give them a 2-letter code and check in `CAST.md` that they differ from
+   everyone else on at least 3 axes, with a new signature colour.
+3. Add them to the roster and height chart in `CAST.md`.
+4. Run Phase 1, then remake `CAST_LINEUP.png`.
+5. Upload their bible to the Gem's knowledge files.
