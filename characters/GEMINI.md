@@ -83,9 +83,11 @@ the frame size of the last image".
   "Keep everything in this image exactly the same. Only adjust the face of the
   man on the left so it matches image 1."
 - **Watermark:** Gemini images carry an invisible SynthID mark, and on some
-  plans a small visible sparkle in the bottom-right corner. **Crop it off every
-  still before animating.** If you don't, Veo bakes it into every frame of the
-  clip, and it can't be removed afterwards (this happened in the first test).
+  plans a small visible sparkle in the bottom-right corner. **Remove it from
+  every image before you attach it as a reference or animate it.** Gemini
+  copies a watermark from a reference into the new image (in the second shoot
+  it printed the sparkle onto Lanky's jacket as a logo), and Veo bakes it into
+  every frame of a clip, where it can't be removed afterwards.
 - **Mirrored marks:** Gemini sometimes flips a mark to the other side (it
   flipped Lanky's neck mole in the first shoot). Check sides on every image
   and fix with a one-change edit.

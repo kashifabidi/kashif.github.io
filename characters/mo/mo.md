@@ -102,7 +102,9 @@ taken on a full-frame digital camera.
 ## Approval checklist
 
 - [ ] Face matches A1 (broad face, large dark eyes, strong jaw)
-- [ ] Scar through **right** eyebrow, mole low on **right** cheek (left of image when he faces camera)
+- [ ] Eyes **dark brown**. In two-shots Gemini can give him Lanky's pale
+      grey-green eyes; fix with a one-change edit
+- [ ] Scar through **right** eyebrow, mole low on **right** cheek (left of image when he faces camera). The scar is the mark most often dropped in wider shots
 - [ ] Tooth gap visible when his mouth is open
 - [ ] Hair very short with a skin fade, not grown out
 - [ ] Beard full and short, not stubble, not long

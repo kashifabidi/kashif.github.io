@@ -101,4 +101,12 @@ Tips:
   *"Keep everything in this image exactly the same. Only adjust the face of
   the man on the left so it matches image 1."*
 - If heights come out wrong: *"Keep everything the same. Make the man on the
-  right taller so the top of the left man's head reaches his chin."*
+  right taller so the top of the left man's head reaches his chin."* Gemini
+  tends to shrink the gap (in the second shoot Mo reached Lanky's eyes, which
+  makes Lanky about 182 cm instead of 196 cm). Check it on every standing
+  two-shot.
+- **Feature bleed:** check each man's eye colour, hair and marks against his
+  own bible. In the second shoot Mo came out with Lanky's pale grey-green eyes
+  and lost his eyebrow scar. Fix with *"Keep everything the same. Only change
+  the left man's eyes to dark brown and add a thin pale scar through the outer
+  end of his right eyebrow."*
