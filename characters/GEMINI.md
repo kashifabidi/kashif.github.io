@@ -92,20 +92,49 @@ the frame size of the last image".
   flipped Lanky's neck mole in the first shoot). Check sides on every image
   and fix with a one-change edit.
 
-## 6. Build a Gem (saves you pasting everything)
+## 6. Connect Gemini to the repo, then build a Gem
 
-Create a Gem called **Mo & Lanky Studio**:
+The bible lives in GitHub. Point Gemini at it so it always reads the latest
+version, and nothing needs re-uploading after a change.
+
+**Repo link** (the `characters` folder on the bible branch):
+```
+https://github.com/kashifabidi/kashif.github.io/tree/claude/character-consistency-shots-vx9vyj/characters
+```
+
+**Option A: import the repo into a chat (always current).**
+1. In a Gemini chat: **+** → **Import code** → paste the repo link.
+2. The first time, connect your GitHub account if the repo is private.
+3. Start the chat with: *"Follow the Gem instructions in
+   `gem-instructions.md` from this repo for the rest of this chat."*
+4. Re-import at the start of each new chat so Gemini reads the latest bible.
+
+**Option B: a Gem (fastest day to day).** Create a Gem called
+**Mo & Lanky Studio**:
 1. Gemini → Gems → New Gem.
-2. Paste `gem-instructions.md` into **Instructions**.
-3. Upload `GEMINI.md`, `mo/mo.md`, `lanky/lanky.md`, `CAST.md` and every file in
-   `locations/` as **knowledge files**.
-   If your plan allows images as knowledge, also add each character's A1 and
-   A4. Otherwise attach them in each chat.
-4. In the Gem, you just write a short brief such as *"SC02 SH04: Mo and Lanky
-   arguing at a bus stop in the rain, medium two-shot"* and it writes the full
-   Gemini prompt, the Veo prompt and the list of images to attach.
+2. Paste everything below the line in `gem-instructions.md` into
+   **Instructions**.
+3. For **Knowledge**, import the repo link above if the Gem offers
+   **Import code**. If it only takes files, add `GEMINI.md`, `CAST.md`,
+   `mo/mo.md`, `lanky/lanky.md` and everything in `locations/`, from your
+   computer or from Google Drive (Drive files stay in sync when you update
+   them there).
+4. In the Gem, write a short brief such as *"SC02 SH04: Mo and Lanky
+   arguing at a bus stop in the rain, medium two-shot"*. It replies with the
+   images to attach, the image prompt, the Veo prompt and a continuity check.
+5. Upload a generated image and say *"review"*. It checks it against the
+   bible and gives you one-change fix prompts.
 
-When you add a character, upload their bible to the Gem too.
+**Either way, attach the anchor images in the chat itself.** Gemini uses
+attached images as visual references far more reliably than images it reads
+from the repo. Anchors live in `mo/anchors/`, `lanky/anchors/`,
+`locations/anchors/` and `CAST_LINEUP.png`, all with the watermark removed.
+
+When the bible changes, re-import the repo (or refresh the Drive/knowledge
+files). When you add a character or location, its file is picked up
+automatically with Option A; with file uploads, add it to the Gem.
+
+Menu names here reflect Gemini at the time of writing and may move.
 
 ## 7. Animating with Veo
 
