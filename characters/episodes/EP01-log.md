@@ -12,7 +12,9 @@ master's pixels.
 | MO_A1 | ✅ Approved | `mo/anchors/MO_A1.png` | After 3 fixes (eyebrow piercing → shaved slit; scattered moles → left-cheek cluster; softbox removed). Face unchanged by edits |
 | LK_A1 | ✅ Approved | `lanky/anchors/LK_A1.png` | First take. Face, curls, beard all match casting master |
 | MO_A4 | ✅ Approved | `mo/anchors/MO_A4.png` | First take. Face matches MO_A1, marks on his left |
-| LK_A4 | ⏳ Next | | |
+| LK_A4 | ✅ Approved | `lanky/anchors/LK_A4.png` | First take |
+| CAST_LINEUP | ✅ Built | `CAST_LINEUP.png` | Composited by the director from MO_A4 + LK_A4 at exact scale (170 / 196 cm) with a height chart. Not generated, so heights can't drift. Top of Mo's head = Lanky's chin |
+| STU_A2 | ⏳ Next | | |
 | Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
 

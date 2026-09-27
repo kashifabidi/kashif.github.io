@@ -44,6 +44,12 @@ axes, and use a new signature colour.
 
 ## Cast lineup (build once, after all anchors are LOCKED)
 
+**v2 lineup is composited, not generated:** `CAST_LINEUP.png` places MO_A4
+and LK_A4 side by side at exact real-world scale on a height chart. Gemini
+shrank the height gap in every generated attempt, so rebuild it the same way
+(scale each full-body anchor by pixels-per-cm) whenever the cast changes. The
+prompt below is kept for reference only.
+
 One image of the whole cast at true height. In Gemini it carries height,
 build and outfits in a single reference slot. Save as
 `characters/CAST_LINEUP.png` and remake it whenever a character is added or
