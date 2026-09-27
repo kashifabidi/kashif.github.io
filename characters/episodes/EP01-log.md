@@ -41,7 +41,7 @@ Known drift accepted for this episode (keep consistent across EP01 only):
 - Lanky's hair is shorter than the bible (ears visible). Hidden in shots 1–2;
   revisit before any shot that shows his head.
 | Shots 1–2 | 🔒 Locked | `shots/video/EP01_SH01-02_assembly.mp4` | User confirmed Mo's cut-off line and accepted the laptop pop at the 1→2a cut |
-| Shot 3a (Mo close-up: "Lower.") | ⏳ Next | first frame `shots/EP01_SH03a_first_frame.png` (2c raw @5.6 s) | |
+| Shot 3a (Mo close-up: "Lower.") | ✅ Approved (pending audio confirm) | raw `shots/video/EP01_SH03a_v1_raw.mp4` → `EP01_SH03a_final.mp4` (0.8–4.4 s). From the correct first frame (diff 2.6). Speaks ~1.4 s, glances at Lanky 2.2–2.9 s, back to camera. Background audio louder than other clips | first frame `shots/EP01_SH03a_first_frame.png` (2c raw @5.6 s) | |
 | Shot 3b (Lanky crouches: "Better?") | ⏳ Waiting | first frame `shots/EP01_SH03b_first_frame.png` (2b raw @4.45 s, uncropped) | Crop in post with 2b box |
 | Shot 3 v1 | ❌ Rejected | `shots/video/EP01_SH03_v1_rejected.mp4` | Made in the Gemini app: 1280×720 landscape; opened on the MO_A1 portrait then jump-cut to a new scene; different Lanky (short curls, new face, denim jacket), no studio, one short line only. Redo in Flow from the 3a/3b first frames |
 | Shot 3 v2 | ❌ Rejected (funny, wrong cast) | `shots/video/EP01_SH03_v2_rejected.mp4` | 9:16 ✅ and a great wobbly crouch, but not generated from the 3b first frame (diff 73): new Lanky (baby face, tight curls, khaki shorts, different jacket), different room, 1 short line. Likely made with Ingredients/text instead of Frames to Video |
