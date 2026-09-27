@@ -212,6 +212,9 @@ Veo rules (learned from the first test clips):
   generation is down/limited, not your prompt** (EP01: all lines failed for
   hours while silent clips worked). Stop spending attempts; generate silent
   and lay in audio from an earlier take, or try again the next day.
+- **Veo can burn in fake, misspelt subtitles** (EP01 7a). Check the lower
+  third of every clip; crop them out, or add "no captions, no on-screen
+  text" to the prompt.
 - **One speaker per clip.** Veo gives all the dialogue to the most visible
   moving mouth: in EP01 shot 2, Lanky said both his line and Mo's. When two
   characters talk, generate the first speaker's clip, then use Flow's
