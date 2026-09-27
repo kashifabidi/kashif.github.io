@@ -14,7 +14,8 @@ master's pixels.
 | MO_A4 | ✅ Approved | `mo/anchors/MO_A4.png` | First take. Face matches MO_A1, marks on his left |
 | LK_A4 | ✅ Approved | `lanky/anchors/LK_A4.png` | First take |
 | CAST_LINEUP | ✅ Built | `CAST_LINEUP.png` | Composited by the director from MO_A4 + LK_A4 at exact scale (170 / 196 cm) with a height chart. Not generated, so heights can't drift. Top of Mo's head = Lanky's chin |
-| STU_A2 | ⏳ Next | | |
+| STU_A2 (Cam A) | ✅ Approved | `locations/anchors/STU_A2.png` | First take. Laptop instead of monitor; set block updated. Camera plan A–D added to studio.md |
+| Still A | ⏳ Next | | |
 | Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
 

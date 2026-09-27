@@ -1,6 +1,6 @@
 # The Studio (code: STU)
 
-**Status:** DRAFT  ·  **Version:** v1  ·  Mo and Lanky's home content-creator studio.
+**Status:** LOCKED (Cam A)  ·  **Version:** v2  ·  Mo and Lanky's home content-creator studio.
 
 Sets drift like faces do: in the first shoot the ring light, shelves and
 window moved between shots. Treat the room like a character: one fixed
@@ -12,16 +12,29 @@ here.
 > Paste into every prompt set in the studio, word for word.
 
 ```
-The studio is a bright converted living room with white walls and a pale grey
-carpet. On the left, a tall window with sheer white curtains lets in soft
-daylight. Against the back wall stands a grey fabric three-seater sofa. Behind
-the sofa, two beige fabric acoustic panels lean against the wall, with a black
-acoustic foam panel mounted high above them. On the right, white floating
-shelves hold camera bodies and lenses, and below them a light wooden desk
-holds a monitor showing a video editing timeline. Two cameras on black
-tripods stand to the left of the sofa, and a ring light on a black stand with
-a microphone on a boom arm stands between the sofa and the desk.
+The studio is a small, bright converted living room with white walls and a
+pale grey carpet. On the left, a tall window with sheer white curtains lets
+in soft daylight, and two cameras on black tripods stand in front of it.
+Against the back wall stands a grey fabric three-seater sofa with light
+wooden legs. Behind the sofa, two beige fabric acoustic panels lean against
+the wall, with a square black acoustic foam panel mounted high above them. A
+ring light on a black stand and a microphone on a black boom arm stand
+between the sofa and the desk. On the right, white floating shelves hold
+camera lenses and two small plants, and below them a light wooden standing
+desk holds an open laptop showing a video editing timeline.
 ```
+
+## Camera positions
+
+The room is small, so every shot comes from one of these fixed positions.
+Each gets its own empty-room anchor, made when first needed.
+
+| Camera | Position | Anchor |
+|---|---|---|
+| **Cam A** | Tripod in the middle of the room at chest height, facing the sofa (the "vlog camera") | `anchors/STU_A2.png` ✅ |
+| **Cam B** | High in the front-right corner by the ring light, looking down across the carpet | `anchors/STU_B.png` ⏳ |
+| **Cam C** | Straight overhead, looking down at the carpet in front of the sofa | `anchors/STU_C.png` ⏳ |
+| **Cam D** | Reverse angle from the sofa, facing the window and the two tripods | `anchors/STU_D.png` ⏳ |
 
 ## Layout (keep consistent)
 
@@ -29,7 +42,7 @@ a microphone on a boom arm stands between the sofa and the desk.
 |---|---|
 | Left | Tall window, sheer white curtains; two cameras on tripods in front of it |
 | Centre | Grey three-seater sofa against the back wall; beige acoustic panels behind; black foam panel above |
-| Right | White floating shelves with cameras and lenses; wooden desk with monitor below |
+| Right | White floating shelves with lenses and two small plants; light wooden standing desk with an open laptop below |
 | Between sofa and desk | Ring light on a black stand, microphone on a boom arm |
 | Light | Soft daylight from the left window, warm fill from the ring light |
 
@@ -38,7 +51,7 @@ behind the camera instead of moving things.
 
 ## Screens
 
-The monitor always shows **a video editing timeline with no people on
+The laptop always shows **a video editing timeline with no people on
 screen**, unless a scene says otherwise. Always state it in the Veo prompt.
 
 ## Props
