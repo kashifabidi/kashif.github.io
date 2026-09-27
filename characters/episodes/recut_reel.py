@@ -54,7 +54,11 @@ def caption(text):
     if text in _caps:
         return _caps[text]
     sound = text.startswith("[")
-    font = ImageFont.truetype(os.path.join(FONTS, "Poppins-BoldItalic.ttf" if sound else "Poppins-Bold.ttf"), CAP_SIZE)
+    path = os.path.join(FONTS, "Poppins-BoldItalic.ttf" if sound else "Poppins-Bold.ttf")
+    size = CAP_SIZE
+    while ImageFont.truetype(path, size).getlength(text) > W - 110:     # keep clear of the edges
+        size -= 2
+    font = ImageFont.truetype(path, size)
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
     cx, cy = W // 2, CAP_Y
     for dx in range(-2, 3):

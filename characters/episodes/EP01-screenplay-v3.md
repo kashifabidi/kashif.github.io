@@ -129,3 +129,19 @@ The times are the finished Short's. "Jump" means a jump cut inside the master ta
 - **Loudness:** −14 LUFS integrated, true peak −1.5 dB.
 - **Derivatives:** the same master gives a 12 s teaser (00.0–11.0 plus the
   CRACK), and a "blooper" of the face-down line uncut.
+
+## Build (2026-09-28)
+
+`build_ep01_v3.py` → `shots/video/EP01_v3.mp4`, 37.75 s, −14.4 LUFS.
+
+- **Clip A v2:** used 0–2 s. "Perfect." goes over Mo looking down. He turns
+  and says "Welcome back to—", and the crack cuts into 4c.
+- **Clip C:** Veo started it from the wrong frame (Mo standing), so it's used
+  from 2.5 s after a jump cut from clip B, with a punch-out to the full frame
+  on that cut.
+- **Clip D:** only 0–1.9 s is used (Mo's stare). The Lanky that Veo drew
+  failed the face check (short curls, no beard, black tee), so his line plays
+  off-screen from the floor, a callback to his head being out of frame at the
+  start.
+- **Every cut** measures at normal frame-to-frame motion except the three
+  deliberate jump cuts.
