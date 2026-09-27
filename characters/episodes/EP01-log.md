@@ -27,7 +27,7 @@ master's pixels.
 | Shot 2a final | ✅ Approved | `shots/video/EP01_SH02a_final.mp4` | Trimmed 1.75–4.625 s of the raw clip (2.88 s), cropped. Lanky's line at 0.5–1.4 s, then silence. Mo's look-up moves to 2b |
 | Shot 2b v1 | ✅ Used for the look-up only | `shots/video/EP01_SH02b_v1_raw.mp4` → `EP01_SH02b_final.mp4` | Mo's silent look-up 2.2–3.6 s ✅, back to camera by 4.4 s. But Mo mouthed the line silently and the **voice came out of Lanky** again (6.5–7.0 s). Trimmed 0–4.45 s. Veo shifted framing slightly; matching crop box found by template search: x 41, y 200, 592 × 1054 (score 0.89). Laptop now hides Lanky's trainers (minor) |
 | Shot 2c v1 | ❌ Rejected | `shots/video/EP01_SH02c_v1_raw.mp4` | Identity excellent (marks correct, stable 8 s). But no dialogue (flat room tone, mouth closed), and the still's corner watermark was pulled onto his jacket and animated as a moving logo. Fix: director crops the still so the watermark is out of frame, then Veo prompt with the line |
-| Shot 2c v2 | ⏳ Waiting for the close-up still | | |
+| Shot 2c v2 | ✅ Approved (pending audio confirm) | `shots/video/EP01_SH02c_v2_raw.mp4` → `EP01_SH02c_final.mp4` | Flow Ingredients with MO_A1_ingredient. Line at ~3.0–3.6 s with lip movement; no sparkle; marks correct all clip. Expression a dry half-smile rather than flat deadpan (works). Trimmed 1.9–5.6 s (3.7 s) |
 | Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
 
