@@ -72,7 +72,7 @@ def grade_clip(name):
     dur = float(v.get(7)) / 24.0
     out = os.path.join(TMP, name + ".mp4")
     af = (f"aresample=48000,aformat=channel_layouts=stereo,highpass=f=80,lowpass=f=11000,"
-          f"afftdn=nr=12:nf=-50,afade=t=in:d=0.015,afade=t=out:st={max(0, dur - 0.015):.3f}:d=0.015,apad")
+          f"afftdn=nr=12:nf=-50,afade=t=in:d=0.015,afade=t=out:st={max(0, dur - 0.015):.3f}:d=0.015,apad=whole_dur={dur:.3f},atrim=0:{dur:.3f}")
     subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", "-i", out_v, "-i", src,
                     "-map", "0:v", "-map", "1:a", "-af", af, "-c:v", "libx264", "-crf", "14",
                     "-preset", "medium", "-pix_fmt", "yuv420p", "-c:a", "pcm_s16le",
