@@ -208,6 +208,10 @@ Veo rules (learned from the first test clips):
   quiet room. The only sounds are soft room tone and [the scripted
   line/effects]. There is no soundtrack, no background music, no score, no
   instruments, no humming. Silence between words."*
+- **"Audio generation failed" on every speech prompt = Flow's voice
+  generation is down/limited, not your prompt** (EP01: all lines failed for
+  hours while silent clips worked). Stop spending attempts; generate silent
+  and lay in audio from an earlier take, or try again the next day.
 - **One speaker per clip.** Veo gives all the dialogue to the most visible
   moving mouth: in EP01 shot 2, Lanky said both his line and Mo's. When two
   characters talk, generate the first speaker's clip, then use Flow's
