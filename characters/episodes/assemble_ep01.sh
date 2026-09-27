@@ -3,7 +3,9 @@
 set -e
 cd "$(dirname "$0")/../shots/video"
 FF=${FFMPEG:-$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())")}
-CLIPS=(EP01_SH01_final EP01_SH02a_final EP01_SH02b_final EP01_SH02c_final EP01_SH03a_final EP01_SH03b_final EP01_SH03c_final EP01_SH04a_final EP01_SH04b_final EP01_SH04c_final EP01_SH05a_final EP01_SH05b_final EP01_SH06a_final EP01_SH07a_final EP01_SH07b_final EP01_SH07c_final)
+# Continuity cut (EP01-continuity-plan.md). Add EP01_CT08_final after SH04a and
+# EP01_CT12_final at the end once clips A v2 and C exist.
+CLIPS=(EP01_SH01_final EP01_SH02a_final EP01_SH02b_final EP01_CT04_final EP01_CT05_final EP01_SH03b_final EP01_SH03c_final EP01_SH04a_final EP01_SH04c_final EP01_CT10_final)
 ARGS=(); F=""; N=0
 for c in "${CLIPS[@]}"; do
   ARGS+=(-i "$c.mp4")

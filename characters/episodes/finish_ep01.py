@@ -2,7 +2,8 @@
 """Continuity finishing pass for EP01.
 
 Makes the rough cut read as one continuous take from two cameras:
-  1. Per-clip colour match in LAB (remove each generation's cast/exposure).
+  1. Colour match in LAB, chained across cuts so each clip starts where the
+     previous one ended, then centred on one target look.
   2. Per-clip texture match (tame over-sharp clips, lift soft ones).
   3. One shared "camera" look on top: gentle curve, vignette, film grain.
   4. One soundscape: per-clip denoise + band-limit, 15 ms edge fades, and a
@@ -39,12 +40,35 @@ def stats(path):
     return np.mean(L, 0), float(np.mean(S))
 
 
-def grade_clip(name):
+def edge_lab(path, last):
+    """Mean LAB of the first (or last) 3 frames: what the viewer compares at a cut."""
+    v = cv2.VideoCapture(path); n = int(v.get(7)); L = []
+    for i in (range(n - 3, n) if last else range(3)):
+        v.set(1, i); ok, f = v.read()
+        if ok: L.append(cv2.cvtColor(f, cv2.COLOR_BGR2LAB).reshape(-1, 3).astype(float).mean(0))
+    return np.mean(L, 0)
+
+
+def seam_offsets(names):
+    """LAB offsets that make every cut match (end of clip i = start of clip i+1),
+    then shift the whole chain so its average lands on the target look.
+    Per-clip means are content-driven (an empty room reads brighter), so matching
+    each clip to the target on its own creates jumps inside continuous action."""
+    paths = [os.path.join(VID, n + ".mp4") for n in names]
+    off = [np.zeros(3)]
+    for a, b in zip(paths, paths[1:]):
+        off.append(off[-1] + edge_lab(a, True) - edge_lab(b, False))
+    means = np.array([stats(p)[0] for p in paths]) + np.array(off)
+    target = np.array([TARGET_L, 128 + TARGET_A, 128 + TARGET_B])
+    shift = target - means.mean(0)
+    shift[0] = np.clip(shift[0] * L_STRENGTH, -10, 8)
+    return {n: o + shift for n, o in zip(names, off)}
+
+
+def grade_clip(name, offset):
     src = os.path.join(VID, name + ".mp4")
     m, sharp = stats(src)
-    dL = float(np.clip((TARGET_L - m[0]) * L_STRENGTH, -10, 8))
-    da = (128 + TARGET_A) - m[1]
-    db = (128 + TARGET_B) - m[2]
+    dL, da, db = (float(x) for x in offset)
     # texture: blur if too sharp, unsharp if too soft
     ratio = sharp / TARGET_SHARP
     sigma = float(np.clip(0.55 * np.log2(ratio), 0, 1.6)) if ratio > 1.3 else 0.0
@@ -82,7 +106,8 @@ def grade_clip(name):
 
 
 def main():
-    parts = [grade_clip(c) for c in CLIPS]
+    offs = seam_offsets(CLIPS)
+    parts = [grade_clip(c, offs[c]) for c in CLIPS]
 
     # concatenate
     lst = os.path.join(TMP, "list.txt")
