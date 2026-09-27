@@ -1,0 +1,26 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  section: 'heroes' | 'zone-briefings';
+  date?: Date;
+  jsonLd?: unknown[];
+}
+
+const { title, description, slug, section, date, jsonLd } = Astro.props;
+const sectionLabel = section === 'heroes' ? 'Hero Dossier' : 'Zone Briefing';
+const dateStr = date?.toISOString().slice(0, 10);
+---
+<BaseLayout title={title} description={description} jsonLd={jsonLd} ogType="article">
+  <div class="dossier-meta">
+    <span><b>Type</b> {sectionLabel}</span>
+    <span><b>Route</b> /{section}/{slug}/</span>
+    {dateStr && <span><b>Filed</b> <time datetime={dateStr}>{dateStr}</time></span>}
+  </div>
+  <article class="prose">
+    <slot />
+  </article>
+</BaseLayout>

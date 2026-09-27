@@ -1,6 +1,6 @@
 ---
 title: "Granada Hero Dossier: SABLE | Narrative Survival Extraction"
-slug: "heroes/sable-dossier"
+slug: "sable-dossier"
 description: "Classified tactical breakdown and 3D narrative origin of Vance 'Sable' Korhonen in the Granada Exclusion Zone."
 date: 2026-09-28
 draft: false
@@ -55,7 +55,7 @@ Sable's body is a record of the runs he has survived. Nothing on this list reset
 
 ## Perspective Breakdown: How Sable Fights
 
-Granada uses a hybrid camera. You move and read the ground in third person, and you aim in first person. Sable's kit and scars are built around that split.
+Granada uses a hybrid camera. You move and read the ground in third person, and you aim in first person. Sable's kit and scars are built around that split. The full system is covered in [Hybrid Perspective Gunplay](/zone-briefings/hybrid-perspective-gunplay/).
 
 ### Third person: moving and reading the ground
 
@@ -78,7 +78,7 @@ Granada uses a hybrid camera. You move and read the ground in third person, and 
 >
 > **Rival extraction titles** sell stash space and pocket slots in editions that cost $200 and up. Players who pay more carry more out of every raid.
 >
-> **Granada doesn't sell space.** Every player starts with the same stash. Every expansion, every rig, every weapon Sable carries was pulled out of the Zone by a player who went in with the same odds as everyone else.
+> **Granada doesn't sell space.** Every player starts with the same stash. Every expansion, every rig, every weapon Sable carries was pulled out of the Zone by a player who went in with the same odds as everyone else. [Why we rejected pay-to-win editions →](/zone-briefings/extraction-shooter-without-pay-to-win/)
 >
 > | | Rival Editions ($200+) | Granada |
 > |---|---|---|
@@ -95,6 +95,11 @@ Granada uses a hybrid camera. You move and read the ground in third person, and 
 <!-- Replace with embed once the cinematic is published -->
 
 ---
+
+**Related briefings:**
+- [Declassified Incident Report: The Collapse of Sector 4](/zone-briefings/sector-4-incident/)
+- [Hybrid Perspective Gunplay](/zone-briefings/hybrid-perspective-gunplay/)
+- [Extraction Shooter Without Pay to Win](/zone-briefings/extraction-shooter-without-pay-to-win/)
 
 <script type="application/ld+json">
 {

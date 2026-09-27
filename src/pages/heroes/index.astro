@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const entries = (await getCollection('heroes', ({ data }) => !data.draft))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+<BaseLayout title="Hero Dossiers | Granada" description="Declassified dossiers on the survivors of the Granada Exclusion Zone.">
+  <div class="prose">
+    <h1>Hero Dossiers</h1>
+    <p class="lede">Survivors of the Granada Exclusion Zone. Every scar is earned and none of them reset.</p>
+  </div>
+  <ul class="card-list">
+    {entries.map((e) => (
+      <li><a href={`/heroes/${e.id}/`}><span class="kicker">Dossier</span><span class="t">{e.data.title}</span><span class="d">{e.data.description}</span></a></li>
+    ))}
+  </ul>
+</BaseLayout>

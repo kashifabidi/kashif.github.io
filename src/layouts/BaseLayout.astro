@@ -1,0 +1,61 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  jsonLd?: unknown[];
+  ogType?: string;
+}
+
+const { title, description, jsonLd = [], ogType = 'website' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const origin = Astro.site ? new URL(Astro.site).origin : '';
+
+// Schema in content uses https://example.com as the domain placeholder.
+// Swap it for the real site origin at build time, and escape "<" so the
+// JSON can't close the script tag early.
+const serialize = (obj: unknown) =>
+  JSON.stringify(obj)
+    .replaceAll('https://example.com', origin)
+    .replace(/</g, '\\u003c');
+
+const path = Astro.url.pathname;
+const section = path.startsWith('/heroes') ? 'heroes' : path.startsWith('/zone-briefings') ? 'zone-briefings' : '';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#0d1013" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Granada" />
+    <meta name="twitter:card" content="summary" />
+    {jsonLd.map((block) => <script type="application/ld+json" set:html={serialize(block)} />)}
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="inner">
+        <a class="brand" href="/">GRANADA<span>//</span></a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/zone-briefings/" aria-current={section === 'zone-briefings' ? 'page' : undefined}>Zone Briefings</a>
+          <a href="/heroes/" aria-current={section === 'heroes' ? 'page' : undefined}>Heroes</a>
+        </nav>
+      </div>
+    </header>
+    <main id="content">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="inner">GRANADA EXCLUSION ZONE — NO PAID STASH. EVERY SLOT EXTRACTED.</div>
+    </footer>
+  </body>
+</html>

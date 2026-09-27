@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const entries = (await getCollection('zone-briefings', ({ data }) => !data.draft))
+  .sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0) || a.data.title.localeCompare(b.data.title));
+---
+<BaseLayout title="Zone Briefings | Granada" description="Design briefings, incident reports and systems breakdowns from the Granada Exclusion Zone.">
+  <div class="prose">
+    <h1>Zone Briefings</h1>
+    <p class="lede">Systems, economy and incident reports from inside the Exclusion Zone.</p>
+  </div>
+  <ul class="card-list">
+    {entries.map((e) => (
+      <li><a href={`/zone-briefings/${e.id}/`}><span class="kicker">Briefing</span><span class="t">{e.data.title}</span><span class="d">{e.data.description}</span></a></li>
+    ))}
+  </ul>
+</BaseLayout>

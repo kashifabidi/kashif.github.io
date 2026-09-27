@@ -1,6 +1,6 @@
 ---
-title: "Extraction Shooter Without Pay to Win | Project Coldwater"
-description: "No $250 editions. No paid stash. Every slot in Project Coldwater is earned by extracting alive. A hybrid 1P/3P extraction shooter set in a contaminated Exclusion Zone."
+title: "Extraction Shooter Without Pay to Win | Granada"
+description: "No $250 editions. No paid stash. Every slot in Granada is earned by extracting alive. A hybrid 1P/3P extraction shooter set in a contaminated Exclusion Zone."
 slug: "extraction-shooter-without-pay-to-win"
 date: 2026-09-28
 draft: false
@@ -11,13 +11,13 @@ keywords: ["extraction shooter without pay to win", "no pay to win extraction sh
 
 Some extraction shooters charge up to $250 for a bigger stash, better pockets, and a head start. That is a purchased edge in a genre built on equal risk.
 
-Project Coldwater runs on one rule: **the Zone doesn't take a credit card.** Every slot, every rig, every weapon you hold was pulled out of a raid by a player who walked in with the same odds as everyone else.
+Granada runs on one rule: **the Zone doesn't take a credit card.** Every slot, every rig, every weapon you hold was pulled out of a raid by a player who walked in with the same odds as everyone else.
 
 ---
 
 ## The Matrix
 
-| | Incumbent Extraction Giants ($150–$250 Editions) | Project Coldwater (Pure Extraction Merit) |
+| | Incumbent Extraction Giants ($150–$250 Editions) | Granada (Pure Extraction Merit) |
 |---|---|---|
 | **Stash limits** | Larger stash sold with premium editions | Same starting stash for every player. Expansions earned through extraction runs only |
 | **Gear progression** | Premium tiers bundle extra slots, pockets, and starting kit | Nothing is bought. Gear comes from raids, traders, and crafting |
@@ -41,11 +41,13 @@ Former pipeline welder at the Varta refinery. She was on shift the night contain
 
 **Camera Doctrine.** Hollow moves in third person, so you read the yard, the rooflines, and the gap between containers. The camera obeys her sightline. If she can't see a target, neither can you, so there is no peeking from behind cover. Raise the weapon and the view snaps into first person through her optic, with her breathing and her scarred hand in frame. Drop ADS and you're back out, reading the ground.
 
+For the full breakdown of how the camera moves from third-person traversal into first-person aim, read [Hybrid Perspective Gunplay](/zone-briefings/hybrid-perspective-gunplay/). To see the same system on Granada's flagship hero, read the [Sable Hero Dossier](/heroes/sable-dossier/).
+
 ---
 
 ## Field Questions
 
-### Is Project Coldwater pay to win?
+### Is Granada pay to win?
 No. There is no edition, bundle, or purchase that grants stash space, pockets, gear, or matchmaking priority. Every tactical advantage is earned through extraction runs.
 
 ### Is there a premium or deluxe edition?
@@ -68,19 +70,19 @@ Yes. Heroes accumulate physical scars, wear, and psychological stakes across run
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "name": "Project Coldwater",
+      "name": "Granada",
       "applicationCategory": "GameApplication",
       "applicationSubCategory": "Extraction Shooter",
       "operatingSystem": "Windows",
       "description": "A hybrid first-person/third-person survival extraction shooter set in a contaminated Exclusion Zone. No paid stash expansions or premium editions. All tactical access is earned through extraction runs.",
-      "url": "https://example.com/extraction-shooter-without-pay-to-win/"
+      "url": "https://example.com/zone-briefings/extraction-shooter-without-pay-to-win/"
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Is Project Coldwater pay to win?",
+          "name": "Is Granada pay to win?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No. There is no edition, bundle, or purchase that grants stash space, pockets, gear, or matchmaking priority. Every tactical advantage is earned through extraction runs."
@@ -123,3 +125,10 @@ Yes. Heroes accumulate physical scars, wear, and psychological stakes across run
   ]
 }
 </script>
+
+---
+
+**Related briefings:**
+- [Hybrid Perspective Gunplay: From Third-Person Traversal to First-Person Precision](/zone-briefings/hybrid-perspective-gunplay/)
+- [Sable Hero Dossier](/heroes/sable-dossier/)
+- [Granada Stash & Progression Protocol](/zone-briefings/fair-play-economy/)

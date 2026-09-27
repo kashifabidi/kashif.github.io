@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const briefings = (await getCollection('zone-briefings', ({ data }) => !data.draft))
+  .sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0));
+const heroes = await getCollection('heroes', ({ data }) => !data.draft);
+---
+<BaseLayout
+  title="Granada | Hybrid 1P/3P Survival Extraction Shooter"
+  description="Granada is a hybrid first- and third-person survival extraction shooter set in a contaminated Exclusion Zone. No paid stash. Every slot is extracted."
+>
+  <div class="prose">
+    <h1>Granada</h1>
+    <p class="lede">A hybrid 1P/3P survival extraction shooter set in a contaminated Exclusion Zone. No premium editions. No paid stash. Every slot you hold was carried out alive.</p>
+    <h2>Zone Briefings</h2>
+  </div>
+  <ul class="card-list">
+    {briefings.map((e) => (
+      <li><a href={`/zone-briefings/${e.id}/`}><span class="kicker">Briefing</span><span class="t">{e.data.title}</span><span class="d">{e.data.description}</span></a></li>
+    ))}
+  </ul>
+  <div class="prose"><h2>Hero Dossiers</h2></div>
+  <ul class="card-list">
+    {heroes.map((e) => (
+      <li><a href={`/heroes/${e.id}/`}><span class="kicker">Dossier</span><span class="t">{e.data.title}</span><span class="d">{e.data.description}</span></a></li>
+    ))}
+  </ul>
+</BaseLayout>
