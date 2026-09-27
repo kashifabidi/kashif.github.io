@@ -11,8 +11,8 @@ master's pixels.
 | Still A retake 2 | 🎭 Became casting master | `casting/CAST_v2_master.png` | Faces didn't match v1, but the new pair were more likeable. **Recast** (Mo v2.0, Lanky v2.0). Heights still wrong (Lanky reads ~178 cm) and room isn't the studio, so not usable as Still A |
 | MO_A1 | ✅ Approved | `mo/anchors/MO_A1.png` | After 3 fixes (eyebrow piercing → shaved slit; scattered moles → left-cheek cluster; softbox removed). Face unchanged by edits |
 | LK_A1 | ✅ Approved | `lanky/anchors/LK_A1.png` | First take. Face, curls, beard all match casting master |
-| MO_A4 | ⏳ Next | | |
-| LK_A4 | ⏳ Waiting | | |
+| MO_A4 | ✅ Approved | `mo/anchors/MO_A4.png` | First take. Face matches MO_A1, marks on his left |
+| LK_A4 | ⏳ Next | | |
 | Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
 

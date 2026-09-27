@@ -1,6 +1,6 @@
 # Mo (code: MO)
 
-**Status:** CAST v2, MO_A1 ✅, MO_A4 pending  ·  **Version:** v2.0  ·  **Role:** The shorter half of the duo. Wannabe presenter: confident, organised, always holding the plan, always one step from losing patience.
+**Status:** CAST v2, anchors ✅ (MO_A1, MO_A4)  ·  **Version:** v2.0  ·  **Role:** The shorter half of the duo. Wannabe presenter: confident, organised, always holding the plan, always one step from losing patience.
 
 > Recast on 2026-09-27 from `../casting/CAST_v2_master.png` (the man on the
 > left). The v1 Mo is archived in `anchors/v1/`. Don't use it as a reference
@@ -66,7 +66,7 @@ deadpan, rarely raising his volume.
 
 | Code | Outfit (exact wording to paste) |
 |---|---|
-| MO-W1 (default) | a mustard-yellow cotton chore jacket with a button front and two hip patch pockets, worn open over a plain charcoal crew-neck t-shirt, black slim jeans and brown leather Chelsea boots |
+| MO-W1 (default) | a mustard-yellow cotton chore jacket with a button front, one chest pocket and two hip patch pockets, worn open over a plain charcoal crew-neck t-shirt, black slim jeans and brown leather Chelsea boots |
 | MO-W2 (smart) | a charcoal wool overcoat over a black roll-neck jumper, dark grey trousers and black leather shoes |
 | MO-W3 (home) | a faded mustard hoodie, grey joggers and black slides |
 
@@ -76,7 +76,7 @@ deadpan, rarely raising his volume.
 |---|---|---|
 | `../casting/CAST_v2_master.png` | Casting master, both men full length. Source of truth for the face until the close-ups exist | ✅ |
 | `anchors/MO_A1.png` | Head-and-shoulders close-up, front, 3:4 | ✅ Approved 2026-09-27 |
-| `anchors/MO_A4.png` | Full body, front, 9:16, 2K | ⏳ To make |
+| `anchors/MO_A4.png` | Full body, front, 9:16 | ✅ Approved 2026-09-27 |
 
 ## Approval checklist
 
