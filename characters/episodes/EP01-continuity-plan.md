@@ -46,3 +46,24 @@ them in order, and `finish_ep01.py` grades them. Every cut between the
 continuity clips was measured at a mean frame difference of 1.5–3.3 (the same
 as normal frame-to-frame motion). `EP01_CT_A_v1_wrongframe_raw.mp4` is kept
 because its still tail matches clip B's first frame.
+
+## Reel v2 (supersedes the CT cut above)
+
+The director's 45 s reel (`shots/video/EP01_reel_director_v1.mp4`) had the
+best pacing and captions, but it cut to Mo close-ups three times.
+`recut_reel.py` rebuilds its standing section (0–27.5 s) from the raw Cam A
+takes, keeping the director's frame choices and audio, and has no close-ups:
+
+| Was (close-up) | Now (vlog camera wide) |
+|---|---|
+| "Where's your head?" / "Lower." | Mo looks up and mouths both lines (2b 24–127 → back to 107 → 3b 0–23); "Is it recording?" comes from Lanky, whose head is out of frame |
+| "Perfect. Welcome back to—" + gasp | "Perfect." while Mo looks down at the kneeling Lanky, knee crack on the cut into 4c. "Welcome back to—" is dropped |
+| "Fine." / "We'll do it lying down." | Mo reading his clipboard over the end of 4c |
+
+- **One framing:** every take is mapped into the same tripod framing, and SH01 is aligned to 2b on the room.
+- **Desk and laptop:** SH01 was generated without them, so they're composited in from 2b and nothing pops in at the jump cut.
+- **One grade:** a tone curve plus vignette fitted to the reel's look.
+- **Captions:** redrawn in the reel's style (`assets/fonts/Poppins-*`).
+- **From the Cam B lying-down shot onwards,** the reel is unchanged.
+
+Output: `shots/video/EP01_reel_v2.mp4` (43.6 s). Clips A v2 and C aren't needed for this version.
