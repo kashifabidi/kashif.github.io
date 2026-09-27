@@ -25,7 +25,8 @@ master's pixels.
 | Shot 2a v1 (from cropped Still A) | ❌ Rejected | | 9:16 ✅, single line ✅, Mo's look-up ✅. But Veo invented an editing screen across the top showing Lanky's full face, plus a laptop with a stranger. Lesson: never ask Veo to cut a face at the frame edge |
 | Shot 2a v2 | ✅ Usable (pending trim) | `shots/video/EP01_SH02a_raw.mp4` → `EP01_SH02a_crop.mp4` | Animated from the uncropped master. Lanky's line ~2.2–3.0 s, Mo's look-up from ~5 s, faces hold. Veo reframed tighter and added a foreground laptop. Cropped in post at x 41, y 168, 624 × 1112 → 720×1280; top edge cuts Lanky just under the nose, Mo's head fully in (tight headroom). Second sound identified by user: Mo repeats Lanky's line (~4.8–5.4 s, mouth visibly moving) |
 | Shot 2a final | ✅ Approved | `shots/video/EP01_SH02a_final.mp4` | Trimmed 1.75–4.625 s of the raw clip (2.88 s), cropped. Lanky's line at 0.5–1.4 s, then silence. Mo's look-up moves to 2b |
-| Shot 2b (look-up + Mo's line) | ⏳ Next | | First frame: `shots/EP01_SH02b_first_frame.png` (raw frame 110 of 2a, uncropped), so the same crop box applies |
+| Shot 2b v1 | ✅ Used for the look-up only | `shots/video/EP01_SH02b_v1_raw.mp4` → `EP01_SH02b_final.mp4` | Mo's silent look-up 2.2–3.6 s ✅, back to camera by 4.4 s. But Mo mouthed the line silently and the **voice came out of Lanky** again (6.5–7.0 s). Trimmed 0–4.45 s. Veo shifted framing slightly; matching crop box found by template search: x 41, y 200, 592 × 1054 (score 0.89). Laptop now hides Lanky's trainers (minor) |
+| Shot 2c (punch-in close-up, Mo's line) | ⏳ Next | | Mo alone in frame so Veo can't give the line to Lanky |
 | Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
 

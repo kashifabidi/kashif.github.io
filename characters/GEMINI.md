@@ -188,6 +188,10 @@ Veo rules (learned from the first test clips):
   where faces drift.
 - **Refer to each person by their Veo tag** (name + visible traits). Veo
   doesn't know the names on their own.
+- **In a two-shot, Veo may still give the line to the wrong person** even
+  with one speaker per clip (EP01: Lanky voiced Mo's line twice). For a
+  line that must land, **cut to a single-person shot** (a punch-in
+  close-up) so there is only one mouth in frame.
 - **One speaker per clip.** Veo gives all the dialogue to the most visible
   moving mouth: in EP01 shot 2, Lanky said both his line and Mo's. When two
   characters talk, generate the first speaker's clip, then use Flow's
