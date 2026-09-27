@@ -6,9 +6,12 @@ master's pixels.
 
 | Asset | Status | File | Notes |
 |---|---|---|---|
-| Still A master | ✅ Approved | `shots/EP01_A_full.png` | Full-length master. Feet level. Mo's head reaches Lanky's nose (Lanky reads ~187 cm; accepted because the crop hides it) |
-| Still A | ✅ Approved | `shots/EP01_A.png` | Crop of master at x 63, y 276, 619 × 1100 (9:16). Top edge cuts Lanky across the nose; Mo fully in frame |
-| Still A0 | ⏳ Next | | Gemini edit of the master: remove Lanky, then same crop box |
+| Still A master v1 | ❌ Rejected | `shots/EP01_A_rejected_faces.png` | Geometry good (feet level, crop works) but **both faces off-model**: Mo rounder/chubbier, smaller eyes, lighter skin, no scar, missing-tooth gap; Lanky rounder face, shorter tighter curls. Approved in error without a face check, then revoked. Keeping it as the base for face-replacement edits |
+| Still A | ⏳ Redo | | Face-replace Mo, then Lanky, on the v1 master; then crop at x 63, y 276, 619 × 1100 |
+| Still A0 | ⏳ Waiting | | After Still A |
+
+**Approval rule:** every still gets a side-by-side face comparison against the
+reference images first. No approval without it.
 
 Known drift accepted for this episode (keep consistent across EP01 only):
 - Mo's jacket has hip patch pockets instead of chest pockets.
