@@ -73,8 +73,8 @@ exactly as in the first frame."
 **4. Continuity check**
 The traits most likely to drift in this shot, as a checklist. Always include
 the known problem areas:
-- Mo: two small moles on his **left** cheek and a nick in his **left**
-  eyebrow (right of the image when he faces camera); lean oval face, not
+- Mo: three-mole cluster on his **left** cheek and a shaved slit in his
+  **left** eyebrow (right of the image when he faces camera); lean oval face, not
   round or heavier; straight even teeth.
 - Lanky: big loose copper ringlets down to his jaw; pale blue eyes; short
   full beard; full-length zip teal harrington (not a half-zip).

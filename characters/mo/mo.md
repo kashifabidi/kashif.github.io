@@ -1,6 +1,6 @@
 # Mo (code: MO)
 
-**Status:** CAST v2, anchors pending  ·  **Version:** v2.0  ·  **Role:** The shorter half of the duo. Wannabe presenter: confident, organised, always holding the plan, always one step from losing patience.
+**Status:** CAST v2, MO_A1 ✅, MO_A4 pending  ·  **Version:** v2.0  ·  **Role:** The shorter half of the duo. Wannabe presenter: confident, organised, always holding the plan, always one step from losing patience.
 
 > Recast on 2026-09-27 from `../casting/CAST_v2_master.png` (the man on the
 > left). The v1 Mo is archived in `anchors/v1/`. Don't use it as a reference
@@ -18,9 +18,10 @@ athletic build. He has a lean oval face with high cheekbones, a defined
 jawline, a straight nose, warm dark brown eyes and neat straight black
 eyebrows. His skin is warm light-brown with natural texture. His black hair
 is short and textured on top with a high skin fade at the sides. He has a
-short, neatly shaped black beard with a crisp line on the cheeks. He has two
-small dark moles on his left cheek, one above the other, and a small nick
-through the outer end of his left eyebrow. He has a bright, easy smile with
+short, neatly shaped black beard with a crisp line on the cheeks. He has
+three small dark moles in a tight cluster on his left cheek, below the outer
+corner of his eye, and a thin shaved slit through the outer end of his left
+eyebrow. He has a bright, easy smile with
 straight white teeth.
 ```
 
@@ -36,7 +37,7 @@ straight white teeth.
 | Skin | Warm light-brown |
 | Hair | Black, short textured top, high skin fade |
 | Facial hair | Short, neatly shaped black beard, crisp cheek line |
-| Asymmetric anchors | Two small moles on his **left** cheek, one above the other · nick through his **left** eyebrow |
+| Asymmetric anchors | Three small moles in a tight cluster on his **left** cheek · thin shaved slit through his **left** eyebrow |
 | Signature colour | **Mustard / ochre** |
 | Signature prop | Brown clipboard |
 | Veo tag | "Mo, the shorter man with a neat black beard in the mustard jacket" |
@@ -74,7 +75,7 @@ deadpan, rarely raising his volume.
 | File | What it is | Status |
 |---|---|---|
 | `../casting/CAST_v2_master.png` | Casting master, both men full length. Source of truth for the face until the close-ups exist | ✅ |
-| `anchors/MO_A1.png` | Head-and-shoulders close-up, front, 3:4, 2K | ⏳ To make |
+| `anchors/MO_A1.png` | Head-and-shoulders close-up, front, 3:4 | ✅ Approved 2026-09-27 |
 | `anchors/MO_A4.png` | Full body, front, 9:16, 2K | ⏳ To make |
 
 ## Approval checklist
@@ -82,9 +83,9 @@ deadpan, rarely raising his volume.
 - [ ] **Side-by-side with MO_A1 (or the casting master) first.** Lean oval
       face, high cheekbones, crisp short beard, bright smile. Reject if he
       reads older, heavier, rounder, or like a different man
-- [ ] Two moles on his **left** cheek and a nick in his **left** eyebrow
-      (right of image when he faces camera). Gemini mirrors these, so check
-      the side
+- [ ] Three-mole cluster on his **left** cheek and shaved slit in his **left**
+      eyebrow (right of image when he faces camera). No piercings, no extra
+      moles. Gemini mirrors and multiplies these, so check
 - [ ] Teeth straight and even
 - [ ] Hair short on top with a high skin fade, not grown out
 - [ ] Skin tone warm light-brown, not darkened or lightened
@@ -98,3 +99,4 @@ deadpan, rarely raising his volume.
 |---|---|---|
 | v1–v1.3 | 2026-09-26/27 | Original Mo (archived in `anchors/v1/`) |
 | v2.0 | 2026-09-27 | **Recast.** New face from the casting master: slimmer, younger, lean oval face, crisp beard, marks on his left. Wardrobe updated to what renders (chore jacket, black jeans, Chelsea boots) |
+| v2.1 | 2026-09-27 | MO_A1 approved. Marks described as they render: three-mole cluster and shaved eyebrow slit, both on his left |
