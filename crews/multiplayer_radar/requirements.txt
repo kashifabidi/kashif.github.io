@@ -1,0 +1,2 @@
+crewai[anthropic]>=0.100
+crewai-tools>=0.30
