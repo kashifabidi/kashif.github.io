@@ -15,7 +15,10 @@ master's pixels.
 | LK_A4 | ✅ Approved | `lanky/anchors/LK_A4.png` | First take |
 | CAST_LINEUP | ✅ Built | `CAST_LINEUP.png` | Composited by the director from MO_A4 + LK_A4 at exact scale (170 / 196 cm) with a height chart. Not generated, so heights can't drift. Top of Mo's head = Lanky's chin |
 | STU_A2 (Cam A) | ✅ Approved | `locations/anchors/STU_A2.png` | First take. Laptop instead of monitor; set block updated. Camera plan A–D added to studio.md |
-| Still A | ⏳ Next | | |
+| Still A try (both generated together) | ❌ Rejected | | Mo's face drifted (narrow, lighter, no marks); Mo's head at Lanky's nose again |
+| Still A try (framed for Mo, Lanky "out of frame") | ❌ Rejected | | Gemini decapitated Lanky inside the frame. Lesson: Gemini always draws whole people; crop afterwards |
+| Lanky plate (Cam A) | ✅ Approved | `shots/EP01_plate_LK.png` | Step 1 of the build-up method: Lanky alone, space on the left |
+| Still A (add Mo, then crop) | ⏳ Next | | |
 | Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
 
