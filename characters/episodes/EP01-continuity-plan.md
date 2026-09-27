@@ -20,3 +20,21 @@ Dialogue that Veo assigned to the wrong mouth is laid in from approved takes.
 
 Cut: `SH05b`, `SH06a`, `SH07*` pictures, and the close-ups `SH02c/03a/04b/05a` pictures
 (their audio is kept).
+
+## Material audit (2026-09-27, before shooting A–C)
+
+Every upload in the session was hash-checked against the repo.
+
+- The latest batch (10 images, 6 videos) is byte-identical to files already
+  here: SH03a/SH07a/SH07b first frames and raw stills, SH06 first frame,
+  STU_A2, LK_A1, MO_A4, MO_A1_ingredient, SH04b final (x2), the assembly,
+  and the SH04b/SH07a/SH07b raws. All of their usable parts are already in
+  the plan above.
+- Never filed, checked frame by frame, **not usable**:
+  - `142526307_…mp4`, `384240923_…mp4` (720×1280, v2 cast): the rejected
+    Shot 2a v1 takes. Veo added an editing screen with Lanky's face over the
+    top, and the framing and laptop differ from 2a/2b, so any cut to them jumps.
+  - Three `gemini_generated_video_*.mp4` (1280×720): v1 cast, landscape,
+    a different room.
+
+Nothing replaces clips A, B or C, so they are still needed.
