@@ -10,8 +10,9 @@ master's pixels.
 | Still A v2 (Mo face edit) | ❌ Rejected | | Mo still chubby, small eyes, missing-tooth gap, marks on both brows. Root cause: Mo's DNA text ("full cheeks", "slight belly", "tooth gap") contradicted MO_A1; fixed in mo.md v1.3 |
 | Still A retake 2 | 🎭 Became casting master | `casting/CAST_v2_master.png` | Faces didn't match v1, but the new pair were more likeable. **Recast** (Mo v2.0, Lanky v2.0). Heights still wrong (Lanky reads ~178 cm) and room isn't the studio, so not usable as Still A |
 | MO_A1 | ✅ Approved | `mo/anchors/MO_A1.png` | After 3 fixes (eyebrow piercing → shaved slit; scattered moles → left-cheek cluster; softbox removed). Face unchanged by edits |
-| LK_A1 | ⏳ Next | | |
-| MO_A4, LK_A4 | ⏳ Waiting | | |
+| LK_A1 | ✅ Approved | `lanky/anchors/LK_A1.png` | First take. Face, curls, beard all match casting master |
+| MO_A4 | ⏳ Next | | |
+| LK_A4 | ⏳ Waiting | | |
 | Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
 

@@ -1,6 +1,6 @@
 # Lanky (code: LK)
 
-**Status:** CAST v2, anchors pending  ·  **Version:** v2.0  ·  **Role:** The tall, wiry half of the duo. Restless, awkward, all elbows.
+**Status:** CAST v2, LK_A1 ✅, LK_A4 pending  ·  **Version:** v2.0  ·  **Role:** The tall, wiry half of the duo. Restless, awkward, all elbows.
 
 > Re-locked on 2026-09-27 from `../casting/CAST_v2_master.png` (the man on
 > the right). Same character as v1, with the fuller curls and beard he
@@ -67,7 +67,7 @@ accent, often trailing off or talking over himself.
 | File | What it is | Status |
 |---|---|---|
 | `../casting/CAST_v2_master.png` | Casting master, both men full length. Source of truth for the face until the close-ups exist | ✅ |
-| `anchors/LK_A1.png` | Head-and-shoulders close-up, front, 3:4, 2K | ⏳ To make |
+| `anchors/LK_A1.png` | Head-and-shoulders close-up, front, 3:4 | ✅ Approved 2026-09-27 |
 | `anchors/LK_A4.png` | Full body, front, 9:16, 2K | ⏳ To make |
 
 ## Approval checklist
