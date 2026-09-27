@@ -188,6 +188,14 @@ Veo rules (learned from the first test clips):
   where faces drift.
 - **Refer to each person by their Veo tag** (name + visible traits). Veo
   doesn't know the names on their own.
+- **One speaker per clip.** Veo gives all the dialogue to the most visible
+  moving mouth: in EP01 shot 2, Lanky said both his line and Mo's. When two
+  characters talk, generate the first speaker's clip, then use Flow's
+  **Extend** for the second speaker, and say the other character's mouth
+  stays closed.
+- **Frame-edge cuts invite fake objects.** When a face is cut by the top of
+  the frame, Veo may invent a beam or shelf to explain it. Describe the view
+  as clear and open, and check the top edge in every frame.
 - **Voices:** put dialogue in quotes after the fixed voice description from
   each bible. Veo voices still vary between clips, so for a series plan to
   replace voices in the edit with one consistent voice per character.

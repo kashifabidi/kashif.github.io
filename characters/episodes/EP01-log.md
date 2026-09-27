@@ -21,7 +21,9 @@ master's pixels.
 | Still A master v1 | ❌ Withdrawn | `shots/EP01_A_rejected_mo_small.png` | Approved then withdrawn at the user's call: Mo too small (head at Lanky's upper chest, feet ~20 px further back), reads as a miniature man. Lesson: when *adding* a person, Gemini follows the height instruction almost literally, so state the true target (chin), not an overshoot |
 | Still A master v2 | ✅ Approved | `shots/EP01_A_master.png` | Mo re-added to the Lanky plate. Mo's head at Lanky's lower lip/chin, height ratio 0.86 (target 0.87). Duplicate clipboard removed with a one-change edit. Lanky unchanged |
 | Still A | ✅ Approved | `shots/EP01_A.png` | Crop at x 168, y 346, 513 × 912 (9:16). Top edge just under Lanky's nose |
-| Shot 2 video (Flow) | ⏳ Next | | |
+| Shot 2 video v1 (Flow) | ❌ Rejected | | 720×1280 ✅, identity ✅, Mo's look-up beat ✅, props ✅. But Veo added a wobbling grey beam across the top covering Lanky's face, and Lanky said both lines ("Is it recording? Where's your head?"), both before Mo looked up |
+| Shot 2a (Lanky's line + Mo's look-up) | ⏳ Next | | One speaker per clip |
+| Shot 2b (Extend: Mo's line) | ⏳ Waiting | | |
 | Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
 
