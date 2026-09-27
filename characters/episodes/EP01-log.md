@@ -40,3 +40,6 @@ Known drift accepted for this episode (keep consistent across EP01 only):
 - Mo's jacket has hip patch pockets instead of chest pockets.
 - Lanky's hair is shorter than the bible (ears visible). Hidden in shots 1–2;
   revisit before any shot that shows his head.
+| Shots 1–2 | 🔒 Locked | `shots/video/EP01_SH01-02_assembly.mp4` | User confirmed Mo's cut-off line and accepted the laptop pop at the 1→2a cut |
+| Shot 3a (Mo close-up: "Lower.") | ⏳ Next | first frame `shots/EP01_SH03a_first_frame.png` (2c raw @5.6 s) | |
+| Shot 3b (Lanky crouches: "Better?") | ⏳ Waiting | first frame `shots/EP01_SH03b_first_frame.png` (2b raw @4.45 s, uncropped) | Crop in post with 2b box |
