@@ -201,6 +201,13 @@ Veo rules (learned from the first test clips):
   first** ("the very tall man on the RIGHT with big ginger curls"), give the
   other person an explicit "stands perfectly still like a statue", and list
   each person's prop by side.
+- **Veo adds background music even when told "No music"** (EP01 3a, 5a).
+  Music can't be removed afterwards (no separation model available), so
+  end every Veo prompt with this paragraph:
+  *"Audio: this is raw on-set location sound from a single microphone in a
+  quiet room. The only sounds are soft room tone and [the scripted
+  line/effects]. There is no soundtrack, no background music, no score, no
+  instruments, no humming. Silence between words."*
 - **One speaker per clip.** Veo gives all the dialogue to the most visible
   moving mouth: in EP01 shot 2, Lanky said both his line and Mo's. When two
   characters talk, generate the first speaker's clip, then use Flow's
