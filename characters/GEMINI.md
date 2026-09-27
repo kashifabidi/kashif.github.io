@@ -160,7 +160,7 @@ Veo prompt template:
 Vertical 9:16. Static locked-off camera. [Shot size, e.g. "Medium two-shot"].
 Both men's full heads stay in frame for the entire shot.
 [Who does what, in order, using the Veo tag from each bible, e.g.
-"Mo, the stocky bearded man in the mustard jacket, lowers his clipboard and
+"Mo, the shorter bearded man in the mustard jacket, lowers his clipboard and
 stares at Lanky. Lanky, the very tall freckled man with curly ginger hair in
 the teal jacket, holds a can against his forehead and doesn't open his eyes."]
 Props: [every prop and who holds it, e.g. "Mo holds the same brown clipboard

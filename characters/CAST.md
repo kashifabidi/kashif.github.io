@@ -29,8 +29,8 @@ different. Mo and Lanky are built to be opposites on every axis:
 | Axis | Mo | Lanky |
 |---|---|---|
 | Height | Short | Very tall |
-| Build | Stocky, broad | Thin, narrow |
-| Face | Broad, strong jaw | Long, narrow, angular |
+| Build | Solid, broad-shouldered | Thin, narrow |
+| Face | Lean, angular, strong jaw | Long, narrow, soft-featured |
 | Skin | Warm medium-brown | Very pale, freckled |
 | Hair | Black, very short, skin fade | Copper-ginger curls to the collar |
 | Facial hair | Full short black beard | Short uneven ginger beard |

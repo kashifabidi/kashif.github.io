@@ -1,5 +1,9 @@
 # EP01 prompts: "Filming Shorts with a 6'5" mate"
 
+> ⚠️ Superseded: EP01 is now shot step by step with the director (see
+> `EP01-log.md`). These prompts use Mo's old DNA (before v1.3) and a
+> full-length approach that loses face identity. Don't use them as-is.
+
 Ready to paste into Gemini (images) and Veo (video). Script:
 `EP01-tall-mate.md`. Rules: `../GEMINI.md`.
 
@@ -146,7 +150,7 @@ Unretouched skin with visible pores, fine lines and natural unevenness. A realis
 Start frame: Still A0 · End frame: Still A
 ```
 Vertical 9:16. Static locked-off camera on a tripod. Medium close-up.
-Mo, the stocky bearded man in the mustard jacket, talks confidently to camera. Halfway through his sentence, Lanky, the very tall freckled man with curly ginger hair in the teal jacket walks in from the right and stops beside him. Lanky's head stays above the top edge of the frame for the whole shot; only his jacket, chest and chin are visible. Mo stops talking mid-word.
+Mo, the shorter bearded man in the mustard jacket, talks confidently to camera. Halfway through his sentence, Lanky, the very tall freckled man with curly ginger hair in the teal jacket walks in from the right and stops beside him. Lanky's head stays above the top edge of the frame for the whole shot; only his jacket, chest and chin are visible. Mo stops talking mid-word.
 Props: Mo holds the same brown clipboard against his chest throughout. Lanky holds one silver can in his right hand.
 Screens: the monitor on the desk shows a video editing timeline with no people on screen.
 Dialogue: Mo speaks in a low, warm, unhurried voice with a Birmingham accent, dry and deadpan, rarely raising his volume. Mo says: "Welcome back to the chann—"
@@ -158,7 +162,7 @@ Keep both men's faces, hair, clothing and heights exactly as in the first frame.
 Start frame: Still A
 ```
 Vertical 9:16. Static locked-off camera. Same medium close-up.
-Mo, the stocky bearded man in the mustard jacket, stays frozen for a beat, then slowly tilts his head up towards where Lanky's face should be. Lanky, the very tall freckled man with curly ginger hair in the teal jacket, stands still; his head stays above the top edge of the frame for the whole shot.
+Mo, the shorter bearded man in the mustard jacket, stays frozen for a beat, then slowly tilts his head up towards where Lanky's face should be. Lanky, the very tall freckled man with curly ginger hair in the teal jacket, stands still; his head stays above the top edge of the frame for the whole shot.
 Props: Mo holds the same brown clipboard against his chest throughout. Lanky holds one silver can in his right hand.
 Screens: the monitor on the desk shows a video editing timeline with no people on screen.
 Dialogue: Lanky speaks in a quick, slightly high, nervous voice with a soft Dublin accent, often trailing off or talking over himself. Lanky says, from above the frame: "Is it recording?" Then Mo speaks in a low, warm, unhurried voice with a Birmingham accent, dry and deadpan, rarely raising his volume. Mo says flatly: "Where's your head?"
@@ -170,7 +174,7 @@ Keep both men's faces, hair, clothing and heights exactly as in the first frame.
 Start frame: Still B
 ```
 Vertical 9:16. Static locked-off camera. Same medium close-up.
-Lanky, the very tall freckled man with curly ginger hair in the teal jacket, holds an awkward half-crouch with only his nose, mouth and beard in the top of the frame, then wobbles slightly. Mo, the stocky bearded man in the mustard jacket, looks up at him, unimpressed. Lanky's eyes and hair stay above the top edge of the frame; his mouth stays visible as he speaks.
+Lanky, the very tall freckled man with curly ginger hair in the teal jacket, holds an awkward half-crouch with only his nose, mouth and beard in the top of the frame, then wobbles slightly. Mo, the shorter bearded man in the mustard jacket, looks up at him, unimpressed. Lanky's eyes and hair stay above the top edge of the frame; his mouth stays visible as he speaks.
 Props: Mo holds the same brown clipboard throughout. Lanky's can stays out of frame.
 Screens: the monitor on the desk shows a video editing timeline with no people on screen.
 Dialogue: Mo speaks in a low, warm, unhurried voice with a Birmingham accent, dry and deadpan, rarely raising his volume. Mo says: "Lower." Then Lanky speaks in a quick, slightly high, nervous voice with a soft Dublin accent, often trailing off or talking over himself. Lanky says: "Better?"
@@ -182,7 +186,7 @@ Keep both men's faces, hair, clothing and heights exactly as in the first frame.
 Start frame: Still C
 ```
 Vertical 9:16. Static locked-off camera. Same medium close-up. Both men's full heads in frame at the start.
-Mo, the stocky bearded man in the mustard jacket, nods, satisfied, and turns back to camera to start his intro. Beside him, Lanky, the very tall freckled man with curly ginger hair in the teal jacket, kneeling, winces; his knees crack loudly and he topples sideways out of the right side of the frame.
+Mo, the shorter bearded man in the mustard jacket, nods, satisfied, and turns back to camera to start his intro. Beside him, Lanky, the very tall freckled man with curly ginger hair in the teal jacket, kneeling, winces; his knees crack loudly and he topples sideways out of the right side of the frame.
 Props: Mo holds the same brown clipboard throughout.
 Screens: the monitor on the desk shows a video editing timeline with no people on screen.
 Dialogue: Mo speaks in a low, warm, unhurried voice with a Birmingham accent, dry and deadpan, rarely raising his volume. Mo says: "Perfect. Welcome back to—" Then Lanky speaks in a quick, slightly high, nervous voice with a soft Dublin accent, often trailing off or talking over himself. Lanky yelps: "Me knees!"
@@ -194,7 +198,7 @@ Keep both men's faces, hair, clothing and heights exactly as in the first frame.
 Start frame: Still D
 ```
 Vertical 9:16. Static locked-off high-angle wide shot.
-Lanky, the very tall freckled man with curly ginger hair in the teal jacket, lies flat on the carpet and lifts his can slightly. Mo, the stocky bearded man in the mustard jacket, stands over him, looks down, and sighs.
+Lanky, the very tall freckled man with curly ginger hair in the teal jacket, lies flat on the carpet and lifts his can slightly. Mo, the shorter bearded man in the mustard jacket, stands over him, looks down, and sighs.
 Props: Mo holds the same brown clipboard against his chest. Lanky holds one silver can on his chest.
 Screens: the monitor on the desk shows a video editing timeline with no people on screen.
 Dialogue: Mo speaks in a low, warm, unhurried voice with a Birmingham accent, dry and deadpan, rarely raising his volume. Mo says, deadpan: "Fine. We'll do it lying down."
@@ -206,7 +210,7 @@ Keep both men's faces, hair, clothing and heights exactly as in the first frame.
 Start frame: Still E
 ```
 Vertical 9:16. Static locked-off overhead shot looking straight down. Both men's full heads stay in frame for the entire shot.
-Mo, the stocky bearded man in the mustard jacket, lying on the left, looks straight up into the lens like a presenter. Lanky, the very tall freckled man with curly ginger hair in the teal jacket, lying on the right and filling the frame top to bottom, gives a small wave with his free hand.
+Mo, the shorter bearded man in the mustard jacket, lying on the left, looks straight up into the lens like a presenter. Lanky, the very tall freckled man with curly ginger hair in the teal jacket, lying on the right and filling the frame top to bottom, gives a small wave with his free hand.
 Props: Mo holds the same brown clipboard on his chest. Lanky holds one silver can on his chest.
 Screens: the monitor on the desk shows a video editing timeline with no people on screen.
 Dialogue: Mo speaks in a low, warm, unhurried voice with a Birmingham accent, dry and deadpan, rarely raising his volume. Mo says, very professionally: "Welcome back to the channel." Then Lanky speaks in a quick, slightly high, nervous voice with a soft Dublin accent, often trailing off or talking over himself. Lanky says: "Hiya."
@@ -218,7 +222,7 @@ Keep both men's faces, hair, clothing and heights exactly as in the first frame.
 Start frame: Still F
 ```
 Vertical 9:16. Static locked-off camera. Medium close-up on Mo.
-Mo, the stocky bearded man in the mustard jacket, stares at the camera's flip screen, then slowly turns his head to look straight into our lens and holds a flat, dead stare for two seconds. Lanky, the very tall freckled man with curly ginger hair in the teal jacket, lying on the floor at the bottom of the frame, lifts his head to look up at Mo.
+Mo, the shorter bearded man in the mustard jacket, stares at the camera's flip screen, then slowly turns his head to look straight into our lens and holds a flat, dead stare for two seconds. Lanky, the very tall freckled man with curly ginger hair in the teal jacket, lying on the floor at the bottom of the frame, lifts his head to look up at Mo.
 Props: Mo holds the same brown clipboard at his side. The camera on the tripod stays the same.
 Screens: the monitor on the desk shows a video editing timeline with no people on screen.
 Dialogue: Mo speaks in a low, warm, unhurried voice with a Birmingham accent, dry and deadpan, rarely raising his volume. Mo says quietly: "...It's been on landscape." Then Lanky speaks in a quick, slightly high, nervous voice with a soft Dublin accent, often trailing off or talking over himself. Lanky says: "So I could've stood up?" Mo says nothing.

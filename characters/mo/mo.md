@@ -11,15 +11,15 @@
 > Paste into every Gemini prompt, word for word, even when images are attached.
 
 ```
-Mo is a 32-year-old British-Pakistani man, 170 cm tall, stocky and
-broad-shouldered with a slight belly. He has a broad face with full cheeks, a
-strong jaw, a broad nose, large dark brown eyes and thick straight black
-eyebrows. His skin is warm medium-brown with natural texture, a few small
-dark marks on the cheeks and faint shadows under the eyes. His black hair is
-very short on top with a tight skin fade at the sides. He has a full, neatly
-trimmed short black beard. He has a thin pale scar through the outer end of
-his right eyebrow, a small dark mole low on his right cheek, and a slight
-gap between his two front teeth.
+Mo is a 32-year-old British-Pakistani man, 170 cm tall, with a solid,
+broad-shouldered build. He has a lean, angular face with defined cheekbones,
+a strong jaw under his beard, a straight nose, large intense dark brown eyes
+and thick straight black eyebrows set low over the eyes. His skin is warm
+medium-brown with natural texture, a few small dark marks on the cheeks and
+faint shadows under the eyes. His black hair is very short on top with a
+tight skin fade at the sides. He has a full, neatly trimmed short black
+beard. He has a thin pale scar through the outer end of his right eyebrow and
+a small dark mole low on his right cheek. His teeth are complete and even.
 ```
 
 ## Physical spec
@@ -28,17 +28,17 @@ gap between his two front teeth.
 |---|---|
 | Age | 32 |
 | Height / weight | 170 cm / ~85 kg |
-| Build / posture | Stocky, broad, slight belly; stands square, feet planted |
-| Face shape | Broad, full cheeks, strong jaw |
-| Eyes | Large, dark brown |
+| Build / posture | Solid, broad-shouldered; stands square, feet planted |
+| Face shape | Lean and angular, defined cheekbones, strong jaw (**not** round or chubby) |
+| Eyes | Large, intense, dark brown; heavy straight brows set low |
 | Skin | Warm medium-brown, a few small dark marks on cheeks |
 | Hair | Black, very short on top, tight skin fade |
 | Facial hair | Full short neat black beard |
 | Hands | Broad, short fingers |
-| Asymmetric anchors | Scar through **right** eyebrow · mole low on **right** cheek · gap in front teeth |
+| Asymmetric anchors | Scar through **right** eyebrow · mole low on **right** cheek |
 | Signature colour | **Mustard / ochre** |
 | Signature prop | Brown clipboard |
-| Veo tag | "Mo, the stocky bearded man in the mustard jacket" |
+| Veo tag | "Mo, the shorter bearded man in the mustard jacket" |
 
 Both marks are on his right side. In a front-facing shot they appear on the
 **left of the image**.
@@ -82,30 +82,30 @@ them as:
 If you ever need to rebuild him from scratch, use this A1 prompt:
 ```
 A vertical 3:4 studio portrait photograph. Mo is a 32-year-old
-British-Pakistani man, 170 cm tall, stocky and broad-shouldered with a slight
-belly. He has a broad face with full cheeks, a strong jaw, a broad nose, large
-dark brown eyes and thick straight black eyebrows. His skin is warm
-medium-brown with natural texture, a few small dark marks on the cheeks and
-faint shadows under the eyes. His black hair is very short on top with a
-tight skin fade at the sides. He has a full, neatly trimmed short black beard.
-He has a thin pale scar through the outer end of his right eyebrow, a small
-dark mole low on his right cheek, and a slight gap between his two front
-teeth. He wears a mustard-yellow cotton work jacket with two chest pockets
-and metal buttons, worn open over a plain charcoal crew-neck t-shirt.
-Head-and-shoulders framing, facing the camera straight on, neutral
-expression, looking into the lens. Plain mid-grey seamless studio backdrop,
-soft even light, shot on an 85mm lens at eye level. Unretouched skin with
-visible pores, fine lines and natural unevenness. A realistic photograph
-taken on a full-frame digital camera.
+British-Pakistani man, 170 cm tall, with a solid, broad-shouldered build. He
+has a lean, angular face with defined cheekbones, a strong jaw under his
+beard, a straight nose, large intense dark brown eyes and thick straight black
+eyebrows set low over the eyes. His skin is warm medium-brown with natural
+texture, a few small dark marks on the cheeks and faint shadows under the
+eyes. His black hair is very short on top with a tight skin fade at the sides.
+He has a full, neatly trimmed short black beard. He has a thin pale scar
+through the outer end of his right eyebrow and a small dark mole low on his
+right cheek. His teeth are complete and even. He wears a mustard-yellow cotton
+work jacket with two chest pockets and metal buttons, worn open over a plain
+charcoal crew-neck t-shirt. Head-and-shoulders framing, facing the camera
+straight on, neutral expression, looking into the lens. Plain mid-grey
+seamless studio backdrop, soft even light, shot on an 85mm lens at eye level.
+Unretouched skin with visible pores, fine lines and natural unevenness. A
+realistic photograph taken on a full-frame digital camera.
 ```
 
 ## Approval checklist
 
-- [ ] Face matches A1 (broad face, large dark eyes, strong jaw)
+- [ ] **Side-by-side with MO_A1 first.** Lean angular face, defined cheekbones, large intense eyes. Reject if the face reads round, chubby or soft
 - [ ] Eyes **dark brown**. In two-shots Gemini can give him Lanky's pale
       grey-green eyes; fix with a one-change edit
 - [ ] Scar through **right** eyebrow, mole low on **right** cheek (left of image when he faces camera). The scar is the mark most often dropped in wider shots
-- [ ] Tooth gap visible when his mouth is open
+- [ ] Teeth complete and even (no missing-tooth look)
 - [ ] Hair very short with a skin fade, not grown out
 - [ ] Beard full and short, not stubble, not long
 - [ ] Skin tone warm medium-brown, not lightened
@@ -120,3 +120,4 @@ taken on a full-frame digital camera.
 | v1 | 2026-09-26 | Draft created, optimised for Gemini |
 | v1.1 | 2026-09-26 | Softened look (not used) |
 | v1.2 | 2026-09-26 | Back to the original Mo, matched to the first Gemini shoot: scar and mole both on his right, skin fade, jacket and clipboard locked. Face locked |
+| v1.3 | 2026-09-27 | DNA rewritten to match MO_A1: lean angular face, defined cheekbones, intense eyes; dropped "full cheeks", "slight belly" and the tooth gap, which made Gemini render him chubby with a missing tooth |
