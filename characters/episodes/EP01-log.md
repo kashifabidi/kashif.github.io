@@ -8,7 +8,9 @@ master's pixels.
 |---|---|---|---|
 | Still A master v1 | ❌ Rejected | `shots/EP01_A_rejected_faces.png` | Geometry good (feet level, crop works) but **both faces off-model**: Mo rounder/chubbier, smaller eyes, lighter skin, no scar, missing-tooth gap; Lanky rounder face, shorter tighter curls. Approved in error without a face check, then revoked. Keeping it as the base for face-replacement edits |
 | Still A v2 (Mo face edit) | ❌ Rejected | | Mo still chubby, small eyes, missing-tooth gap, marks on both brows. Root cause: Mo's DNA text ("full cheeks", "slight belly", "tooth gap") contradicted MO_A1; fixed in mo.md v1.3 |
-| Still A | ⏳ Retake | | Fresh generation at 2K with Mo v1.3 DNA, then crop |
+| Still A retake 2 | 🎭 Became casting master | `casting/CAST_v2_master.png` | Faces didn't match v1, but the new pair were more likeable. **Recast** (Mo v2.0, Lanky v2.0). Heights still wrong (Lanky reads ~178 cm) and room isn't the studio, so not usable as Still A |
+| New anchors | ⏳ Next | | MO_A1, LK_A1, MO_A4, LK_A4 from the casting master at 2K |
+| Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
 
 **Approval rule:** every still gets a side-by-side face comparison against the

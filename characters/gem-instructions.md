@@ -73,10 +73,11 @@ exactly as in the first frame."
 **4. Continuity check**
 The traits most likely to drift in this shot, as a checklist. Always include
 the known problem areas:
-- Mo: scar through his **right** eyebrow and mole low on his **right** cheek
-  (both on the left of the image when he faces camera); eyes **dark brown**.
-- Lanky: curls covering his ears and reaching his collar; full-length zip
-  jacket (not a half-zip); neck mole on his **left**.
+- Mo: two small moles on his **left** cheek and a nick in his **left**
+  eyebrow (right of the image when he faces camera); lean oval face, not
+  round or heavier; straight even teeth.
+- Lanky: big loose copper ringlets down to his jaw; pale blue eyes; short
+  full beard; full-length zip teal harrington (not a half-zip).
 - Standing two-shots: the top of Mo's head at Lanky's **chin** (Gemini tends
   to shrink the gap).
 - No sparkle shape printed on clothing or props.

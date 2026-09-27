@@ -1,47 +1,48 @@
 # Mo (code: MO)
 
-**Status:** LOCKED (face)  ·  **Version:** v1.2  ·  **Role:** The short, solid one of the duo. The straight man: exasperated, organised, always holding the plan.
+**Status:** CAST v2, anchors pending  ·  **Version:** v2.0  ·  **Role:** The shorter half of the duo. Wannabe presenter: confident, organised, always holding the plan, always one step from losing patience.
 
+> Recast on 2026-09-27 from `../casting/CAST_v2_master.png` (the man on the
+> left). The v1 Mo is archived in `anchors/v1/`. Don't use it as a reference
+> any more.
+>
 > Optimised for Gemini. See `../GEMINI.md` for model choice and rules.
-> The master face is the **original Mo** used in the first Gemini shoot.
-> Everything below describes him as he actually renders.
 
 ## DNA block
 
 > Paste into every Gemini prompt, word for word, even when images are attached.
 
 ```
-Mo is a 32-year-old British-Pakistani man, 170 cm tall, with a solid,
-broad-shouldered build. He has a lean, angular face with defined cheekbones,
-a strong jaw under his beard, a straight nose, large intense dark brown eyes
-and thick straight black eyebrows set low over the eyes. His skin is warm
-medium-brown with natural texture, a few small dark marks on the cheeks and
-faint shadows under the eyes. His black hair is very short on top with a
-tight skin fade at the sides. He has a full, neatly trimmed short black
-beard. He has a thin pale scar through the outer end of his right eyebrow and
-a small dark mole low on his right cheek. His teeth are complete and even.
+Mo is a 30-year-old British-Pakistani man, 170 cm tall, with a slim,
+athletic build. He has a lean oval face with high cheekbones, a defined
+jawline, a straight nose, warm dark brown eyes and neat straight black
+eyebrows. His skin is warm light-brown with natural texture. His black hair
+is short and textured on top with a high skin fade at the sides. He has a
+short, neatly shaped black beard with a crisp line on the cheeks. He has two
+small dark moles on his left cheek, one above the other, and a small nick
+through the outer end of his left eyebrow. He has a bright, easy smile with
+straight white teeth.
 ```
 
 ## Physical spec
 
 | Trait | Value |
 |---|---|
-| Age | 32 |
-| Height / weight | 170 cm / ~85 kg |
-| Build / posture | Solid, broad-shouldered; stands square, feet planted |
-| Face shape | Lean and angular, defined cheekbones, strong jaw (**not** round or chubby) |
-| Eyes | Large, intense, dark brown; heavy straight brows set low |
-| Skin | Warm medium-brown, a few small dark marks on cheeks |
-| Hair | Black, very short on top, tight skin fade |
-| Facial hair | Full short neat black beard |
-| Hands | Broad, short fingers |
-| Asymmetric anchors | Scar through **right** eyebrow · mole low on **right** cheek |
+| Age | 30 |
+| Height / weight | 170 cm / ~70 kg |
+| Build / posture | Slim, athletic; stands upright and open, presenter posture |
+| Face shape | Lean oval, high cheekbones, defined jaw |
+| Eyes | Warm dark brown; neat straight black brows |
+| Skin | Warm light-brown |
+| Hair | Black, short textured top, high skin fade |
+| Facial hair | Short, neatly shaped black beard, crisp cheek line |
+| Asymmetric anchors | Two small moles on his **left** cheek, one above the other · nick through his **left** eyebrow |
 | Signature colour | **Mustard / ochre** |
 | Signature prop | Brown clipboard |
-| Veo tag | "Mo, the shorter bearded man in the mustard jacket" |
+| Veo tag | "Mo, the shorter man with a neat black beard in the mustard jacket" |
 
-Both marks are on his right side. In a front-facing shot they appear on the
-**left of the image**.
+Both marks are on his **left**. In a front-facing shot they appear on the
+**right of the image**.
 
 ## Voice (for Veo dialogue)
 
@@ -52,72 +53,48 @@ deadpan, rarely raising his volume.
 
 ## Personality → how it looks on camera
 
-- **Resting expression:** exasperated, brows knitted, like he's already heard
-  the excuse. For warmer beats, write *"a relaxed, friendly expression"*
-  into the prompt, or Gemini defaults to the frown.
-- **How he stands:** square, holding the clipboard against his chest or
-  reading from it.
-- **How he moves:** economical, unhurried, turns his whole body rather than
+- **Resting expression:** friendly and confident, a presenter's half-smile.
+  For exasperated beats, write it into the prompt (*"flat, unimpressed
+  stare"*).
+- **How he stands:** upright, square to camera, clipboard held against his
+  chest or reading from it.
+- **How he moves:** economical, precise; turns his whole body rather than
   just his head.
 
 ## Wardrobe
 
 | Code | Outfit (exact wording to paste) |
 |---|---|
-| MO-W1 (default) | a mustard-yellow cotton work jacket with two chest pockets and metal buttons, worn open over a plain charcoal crew-neck t-shirt, dark indigo straight-leg jeans and brown leather lace-up boots |
+| MO-W1 (default) | a mustard-yellow cotton chore jacket with a button front and two hip patch pockets, worn open over a plain charcoal crew-neck t-shirt, black slim jeans and brown leather Chelsea boots |
 | MO-W2 (smart) | a charcoal wool overcoat over a black roll-neck jumper, dark grey trousers and black leather shoes |
 | MO-W3 (home) | a faded mustard hoodie, grey joggers and black slides |
 
 ## Anchors
 
-The approved shots from the first Gemini shoot are the reference set. Save
-them as:
-
-| File | What it is |
-|---|---|
-| `anchors/MO_A1.png` | Front close-up (clipboard held to chest, marks and tooth gap visible) |
-| `anchors/MO_A4.png` | Full body standing, MO-W1 with jeans and boots |
-| `anchors/MO_A2.png` | Three-quarter: standing next to Lanky, turned to his left |
-
-If you ever need to rebuild him from scratch, use this A1 prompt:
-```
-A vertical 3:4 studio portrait photograph. Mo is a 32-year-old
-British-Pakistani man, 170 cm tall, with a solid, broad-shouldered build. He
-has a lean, angular face with defined cheekbones, a strong jaw under his
-beard, a straight nose, large intense dark brown eyes and thick straight black
-eyebrows set low over the eyes. His skin is warm medium-brown with natural
-texture, a few small dark marks on the cheeks and faint shadows under the
-eyes. His black hair is very short on top with a tight skin fade at the sides.
-He has a full, neatly trimmed short black beard. He has a thin pale scar
-through the outer end of his right eyebrow and a small dark mole low on his
-right cheek. His teeth are complete and even. He wears a mustard-yellow cotton
-work jacket with two chest pockets and metal buttons, worn open over a plain
-charcoal crew-neck t-shirt. Head-and-shoulders framing, facing the camera
-straight on, neutral expression, looking into the lens. Plain mid-grey
-seamless studio backdrop, soft even light, shot on an 85mm lens at eye level.
-Unretouched skin with visible pores, fine lines and natural unevenness. A
-realistic photograph taken on a full-frame digital camera.
-```
+| File | What it is | Status |
+|---|---|---|
+| `../casting/CAST_v2_master.png` | Casting master, both men full length. Source of truth for the face until the close-ups exist | ✅ |
+| `anchors/MO_A1.png` | Head-and-shoulders close-up, front, 3:4, 2K | ⏳ To make |
+| `anchors/MO_A4.png` | Full body, front, 9:16, 2K | ⏳ To make |
 
 ## Approval checklist
 
-- [ ] **Side-by-side with MO_A1 first.** Lean angular face, defined cheekbones, large intense eyes. Reject if the face reads round, chubby or soft
-- [ ] Eyes **dark brown**. In two-shots Gemini can give him Lanky's pale
-      grey-green eyes; fix with a one-change edit
-- [ ] Scar through **right** eyebrow, mole low on **right** cheek (left of image when he faces camera). The scar is the mark most often dropped in wider shots
-- [ ] Teeth complete and even (no missing-tooth look)
-- [ ] Hair very short with a skin fade, not grown out
-- [ ] Beard full and short, not stubble, not long
-- [ ] Skin tone warm medium-brown, not lightened
-- [ ] Jacket mustard with chest pockets; tee charcoal
-- [ ] Clipboard stays a clipboard (not loose paper)
+- [ ] **Side-by-side with MO_A1 (or the casting master) first.** Lean oval
+      face, high cheekbones, crisp short beard, bright smile. Reject if he
+      reads older, heavier, rounder, or like a different man
+- [ ] Two moles on his **left** cheek and a nick in his **left** eyebrow
+      (right of image when he faces camera). Gemini mirrors these, so check
+      the side
+- [ ] Teeth straight and even
+- [ ] Hair short on top with a high skin fade, not grown out
+- [ ] Skin tone warm light-brown, not darkened or lightened
+- [ ] Mustard chore jacket worn open; charcoal tee; black jeans; Chelsea boots
+- [ ] Clipboard stays a clipboard
 - [ ] Clearly shorter than Lanky when both stand (see CAST.md)
 
 ## Version log
 
 | Version | Date | Change |
 |---|---|---|
-| v1 | 2026-09-26 | Draft created, optimised for Gemini |
-| v1.1 | 2026-09-26 | Softened look (not used) |
-| v1.2 | 2026-09-26 | Back to the original Mo, matched to the first Gemini shoot: scar and mole both on his right, skin fade, jacket and clipboard locked. Face locked |
-| v1.3 | 2026-09-27 | DNA rewritten to match MO_A1: lean angular face, defined cheekbones, intense eyes; dropped "full cheeks", "slight belly" and the tooth gap, which made Gemini render him chubby with a missing tooth |
+| v1–v1.3 | 2026-09-26/27 | Original Mo (archived in `anchors/v1/`) |
+| v2.0 | 2026-09-27 | **Recast.** New face from the casting master: slimmer, younger, lean oval face, crisp beard, marks on his left. Wardrobe updated to what renders (chore jacket, black jeans, Chelsea boots) |

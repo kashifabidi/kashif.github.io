@@ -2,10 +2,12 @@
 
 ## Roster
 
+Cast v2 (recast 2026-09-27). Casting master: `casting/CAST_v2_master.png`.
+
 | Code | Name | Status | Signature colour | Height |
 |---|---|---|---|---|
-| MO | Mo | LOCKED (face) | Mustard / ochre | 170 cm (5'7") |
-| LK | Lanky | LOCKED (face) | Teal / petrol blue | 196 cm (6'5") |
+| MO | Mo | CAST v2 (anchors pending) | Mustard / ochre | 170 cm (5'7") |
+| LK | Lanky | CAST v2 (anchors pending) | Teal / petrol blue | 196 cm (6'5") |
 
 ## Height chart
 
@@ -29,13 +31,13 @@ different. Mo and Lanky are built to be opposites on every axis:
 | Axis | Mo | Lanky |
 |---|---|---|
 | Height | Short | Very tall |
-| Build | Solid, broad-shouldered | Thin, narrow |
-| Face | Lean, angular, strong jaw | Long, narrow, soft-featured |
+| Build | Slim, athletic | Very thin, long-limbed |
+| Face | Lean oval, high cheekbones | Long, narrow |
 | Skin | Warm medium-brown | Very pale, freckled |
-| Hair | Black, very short, skin fade | Copper-ginger curls to the collar |
-| Facial hair | Full short black beard | Short uneven ginger beard |
+| Hair | Black, short top, high skin fade | Big loose copper ringlets to the jaw |
+| Facial hair | Short crisp black beard | Short full ginger beard |
 | Colour | Mustard | Teal |
-| Posture | Square, planted | Stooped or sprawled |
+| Posture | Upright presenter | Stooped or sprawled |
 
 New characters must differ from **every** existing one on at least 3 of these
 axes, and use a new signature colour.
