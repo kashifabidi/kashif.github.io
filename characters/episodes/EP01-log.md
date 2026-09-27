@@ -19,7 +19,9 @@ master's pixels.
 | Still A try (framed for Mo, Lanky "out of frame") | ❌ Rejected | | Gemini decapitated Lanky inside the frame. Lesson: Gemini always draws whole people; crop afterwards |
 | Lanky plate (Cam A) | ✅ Approved | `shots/EP01_plate_LK.png` | Step 1 of the build-up method: Lanky alone, space on the left |
 | Still A master v1 | ❌ Withdrawn | `shots/EP01_A_rejected_mo_small.png` | Approved then withdrawn at the user's call: Mo too small (head at Lanky's upper chest, feet ~20 px further back), reads as a miniature man. Lesson: when *adding* a person, Gemini follows the height instruction almost literally, so state the true target (chin), not an overshoot |
-| Still A master v2 | ⏳ Next | | Re-add Mo to the Lanky plate with head at Lanky's chin and feet level |
+| Still A master v2 | ✅ Approved | `shots/EP01_A_master.png` | Mo re-added to the Lanky plate. Mo's head at Lanky's lower lip/chin, height ratio 0.86 (target 0.87). Duplicate clipboard removed with a one-change edit. Lanky unchanged |
+| Still A | ✅ Approved | `shots/EP01_A.png` | Crop at x 168, y 346, 513 × 912 (9:16). Top edge just under Lanky's nose |
+| Shot 2 video (Flow) | ⏳ Next | | |
 | Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
 
