@@ -196,6 +196,11 @@ Veo rules (learned from the first test clips):
   with one speaker per clip (EP01: Lanky voiced Mo's line twice). For a
   line that must land, **cut to a single-person shot** (a punch-in
   close-up) so there is only one mouth in frame.
+- **Veo can swap who does the action** (EP01 3b: Mo crouched instead of
+  Lanky). In two-shots, identify the actor by **screen position and looks
+  first** ("the very tall man on the RIGHT with big ginger curls"), give the
+  other person an explicit "stands perfectly still like a statue", and list
+  each person's prop by side.
 - **One speaker per clip.** Veo gives all the dialogue to the most visible
   moving mouth: in EP01 shot 2, Lanky said both his line and Mo's. When two
   characters talk, generate the first speaker's clip, then use Flow's
