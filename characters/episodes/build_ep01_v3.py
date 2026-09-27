@@ -83,13 +83,18 @@ def main():
     shots.append([f, a, [(2, 21, "Is it recording?"), (62, 82, "Where's your head?"), (106, 120, "Lower.")]])
     # 3  "Better?" / crouch / kneel (director's frames and audio)
     shots.append([d_3b4a, reel(228, 345), [(10, 44, "Better?"), (59, 113, "[continues descending]")]])
-    # 4  "Perfect." (looking down at Lanky), turns: "Welcome back to-" CRACK
-    f = [(A4, i) for i in range(85, 121)] + [(CA, i) for i in range(0, 48)]
+    # 4  "Perfect." (looking down at Lanky), then clip A's own lip-synced intro, cut off by the CRACK
+    #    (Veo recorded Mo's lines in clip A; the director's v3 reel showed they work)
+    aA = R.load_audio(os.path.join(R.VID, CA))
+    f = [(A4, i) for i in range(85, 121)] + [(CA, i) for i in range(0, 124)]
     a = bed(tone, s(len(f)))
     R.place(a, R.piece(f4b, 0.18, 0.62), s(22))                              # "Perfect."
-    R.place(a, R.piece(f4b, 0.80, 1.38), s(36 + 31))                         # "Welcome back to-"
+    a[int(s(36) * R.SR):] = 0
+    R.place(a, R.piece(aA, 0.0, s(124), fade=0.02), s(36))                   # clip A's own audio
     R.place(a, R.piece(f4b, 1.36, 1.53, fade=0.005), s(len(f)) - 0.12, gain=1.6)  # crack
-    shots.append([f, a, [(22, 33, "Perfect."), (67, 81, "Welcome back to—"), (82, 83, "[crack]")]])
+    shots.append([f, a, [(22, 33, "Perfect."), (36 + 5, 36 + 31, "Welcome back to the channel."),
+                         (36 + 43, 36 + 60, "As you can see,"), (36 + 61, 36 + 89, "we've made some major upgrades"),
+                         (36 + 94, 36 + 121, "to the studio gear\u2014"), (36 + 122, 36 + 123, "[crack]")]])
     # 5  "Me knees!" / topple (director's frames and audio)
     f = [(C4, i) for i in d_4c[J4C:]]
     shots.append([f, reel(437 + J4C, 587),
@@ -107,12 +112,17 @@ def main():
                            "-af", "lowpass=f=1800,volume=0.85", "-f", "f32le", "-"],
                           input=muff.astype(np.float32).tobytes(), capture_output=True, check=True).stdout
     R.place(a, np.frombuffer(muff, np.float32).reshape(-1, 2), s(86))
-    shots.append([f, a, [(20, 62, "[sighs in content creator]"), (86, 114, "Welcome back to the chann—")]])
-    # 8  Jump cut: Mo walks to the lens, reads the screen: "...It's been on landscape."
+    shots.append([f, a, [(18, 52, "[sighs in content creator]"), (56, 84, "[commits to the bit]"),
+                         (86, 114, "Welcome back to the chann—")]])
+    # 8  Jump cut: Mo walks to the lens and reads the screen, head bowed (mouth hidden):
+    #    "...It's been on landscape." Looks up: clip C's own "You have got to be kidding me."
+    aC = R.load_audio(os.path.join(R.VID, CC))
     f = [(CC, i) for i in range(60, 181)]
     a = bed(tone, s(len(f)))
-    R.place(a, R.piece(a7a, 0.86, 1.94), s(146 - 60))
-    shots.append([f, a, [(146 - 60, 146 - 60 + 28, "...It's been on landscape.")]])
+    R.place(a, R.piece(a7a, 0.86, 1.94), s(104 - 60))
+    R.place(a, R.piece(aC, 5.50, 6.98), s(132 - 60))
+    shots.append([f, a, [(104 - 60, 104 - 60 + 26, "...It's been on landscape."),
+                         (137 - 60, 167 - 60, "You have got to be kidding me.")]])
     # 9  Mo's dead stare; Lanky from the floor, off screen. Hard cut back to frame 1.
     f = [(CD, i) for i in range(1, 47)]
     a = bed(tone, s(len(f)))
