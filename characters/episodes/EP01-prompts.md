@@ -17,7 +17,8 @@ Ready to paste into Gemini (images) and Veo (video). Script:
    edits of still A, so they must stay in the same chat.
 4. After each still: check it (section at the bottom), fix with one-change
    edits, **remove the watermark**, save as `shots/EP01_<still>.png`.
-5. Animate in **Flow** (or the Gemini app) set to **9:16**, using each still as
+5. Animate in **Flow** set to **9:16** (the Gemini app returns 16:9 and
+   crops the heads off), using each still as
    the **first frame** and the Veo prompt for that shot.
 
 The script breaks our usual "both heads in frame" rule on purpose in shots

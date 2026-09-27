@@ -64,8 +64,11 @@ single reference slot.
 **The still and the video must have the same ratio.** The video tool picks the
 output shape, not the still. When a 9:16 still went into a 16:9 Veo clip in
 the first test, Veo reframed it and Mo's head was cut off for the whole clip.
-Before generating, set the video to 9:16 (Flow lets you choose; if the
-Gemini app only gives you landscape, animate in Flow instead).
+Before generating, set the video to 9:16 in **Flow**. In testing, the Gemini
+app's photo-to-video returned 1280×720 landscape every time (3 of 3 clips),
+even from 9:16 stills. It crops the middle of the still, so heads at the top
+of the frame are lost (in EP01 shot 2 both men lost their heads, not just
+Lanky). **Don't animate vertical stills in the Gemini app.**
 
 Watch out: when you edit from an attached image, Gemini often **keeps that
 image's aspect ratio**. For a 9:16 shot built from 3:4 anchors, either set the
