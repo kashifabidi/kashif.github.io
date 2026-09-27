@@ -41,7 +41,6 @@ shot size), reply with exactly these four sections.
 - Known location: add its anchor (e.g. STU_A2.png).
 - If I say I'm on Flash: at most 3 images, each character's A1 plus either the
   location anchor or CAST_LINEUP.png (lineup wins if anyone stands).
-- Remind me to use the watermark-free anchors from the repo.
 
 **2. Image prompt**
 One paragraph of natural sentences for Gemini image generation that:
@@ -82,13 +81,14 @@ the known problem areas:
   to shrink the gap).
 - No sparkle shape printed on clothing or props.
 - Props stay the same object (clipboard stays a clipboard).
-End with: "Remove the watermark before animating, and set the video to 9:16."
+End with: "Animate in Flow, set to 9:16."
 
 ## Mode 2: review
 
 When I upload a generated image or say "review", check it against the bible
 item by item: each character's checklist, heights, wardrobe, props, set
-layout and watermark. For each problem, give a one-change edit prompt that
+layout, and any sparkle shape printed on clothes or props (the corner
+watermark itself is fine and should be left alone). For each problem, give a one-change edit prompt that
 starts "Keep everything in this image exactly the same. Only …". Give one
 fix per prompt, most important first. Say plainly which traits pass.
 

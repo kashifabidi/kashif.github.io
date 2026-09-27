@@ -86,11 +86,12 @@ the frame size of the last image".
   "Keep everything in this image exactly the same. Only adjust the face of the
   man on the left so it matches image 1."
 - **Watermark:** Gemini images carry an invisible SynthID mark, and on some
-  plans a small visible sparkle in the bottom-right corner. **Remove it from
-  every image before you attach it as a reference or animate it.** Gemini
-  copies a watermark from a reference into the new image (in the second shoot
-  it printed the sparkle onto Lanky's jacket as a logo), and Veo bakes it into
-  every frame of a clip, where it can't be removed afterwards.
+  plans a small visible sparkle in the bottom-right corner. **Leave it on**
+  (editing it out damages the image). Gemini can occasionally copy it from a
+  reference into a new image, e.g. printed on clothing as a logo. If that
+  happens, fix it with a one-change edit on the new image:
+  *"Keep everything the same. Only remove the small four-pointed sparkle
+  shape from the jacket."*
 - **Mirrored marks:** Gemini sometimes flips a mark to the other side (it
   flipped Lanky's neck mole in the first shoot). Check sides on every image
   and fix with a one-change edit.
@@ -131,7 +132,7 @@ https://github.com/kashifabidi/kashif.github.io/tree/claude/character-consistenc
 **Either way, attach the anchor images in the chat itself.** Gemini uses
 attached images as visual references far more reliably than images it reads
 from the repo. Anchors live in `mo/anchors/`, `lanky/anchors/`,
-`locations/anchors/` and `CAST_LINEUP.png`, all with the watermark removed.
+`locations/anchors/` and `CAST_LINEUP.png`.
 
 When the bible changes, re-import the repo (or refresh the Drive/knowledge
 files). When you add a character or location, its file is picked up

@@ -6,7 +6,7 @@ Ready to paste into Gemini (images) and Veo (video). Script:
 ## Before you start
 
 1. Open a **new Gemini chat** with the **Pro image model** (Nano Banana Pro).
-2. Attach these 6 images **in this order**, all watermark-free:
+2. Attach these 6 images **in this order**:
    1. `mo/anchors/MO_A1.png`
    2. `mo/anchors/MO_A4.png`
    3. `lanky/anchors/LK_A1.png`
@@ -16,7 +16,7 @@ Ready to paste into Gemini (images) and Veo (video). Script:
 3. Paste the prompts below **in order, in the same chat**. Stills B and C are
    edits of still A, so they must stay in the same chat.
 4. After each still: check it (section at the bottom), fix with one-change
-   edits, **remove the watermark**, save as `shots/EP01_<still>.png`.
+   edits, save as `shots/EP01_<still>.png`.
 5. Animate in **Flow** set to **9:16** (the Gemini app returns 16:9 and
    crops the heads off), using each still as
    the **first frame** and the Veo prompt for that shot.
@@ -240,7 +240,7 @@ Keep both men's faces, hair, clothing and heights exactly as in the first frame.
       the script needs
 - [ ] Clipboard is a clipboard, page facing away; can is plain silver
 - [ ] Room matches STU_A2; monitor shows an editing timeline
-- [ ] No sparkle shape printed on clothes or props; watermark removed
+- [ ] No sparkle shape printed on clothes or props (the corner watermark is fine)
 
 Common fixes (same chat, one at a time):
 - *"Keep everything in this image exactly the same. Only change the left

@@ -46,7 +46,7 @@ Edit notes:
 ## Production notes per shot
 
 All stills are 9:16, in the Studio (`locations/studio.md`), with the
-watermark-free anchors attached. Ask the Gem for the full prompts with the
+anchors attached. Ask the Gem for the full prompts with the
 brief in the **Gem brief** column.
 
 | # | Gem brief | Continuity watch-outs | Rule overrides |

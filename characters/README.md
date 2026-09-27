@@ -62,7 +62,7 @@ make a new version (`MO v2`). Keep the old anchors, renamed `MO_v1_A1.png`.
 2. New Gemini chat **per scene**. Attach the anchors it lists (characters +
    location), paste the image prompt.
 3. Check the result against the checklist. Fix single problems with a
-   one-change edit. **Crop off the Gemini watermark.** Save to `shots/`.
+   one-change edit. Save to `shots/`.
 4. Animate in Veo with the approved still as the **first frame**
    (Flow → Frames to Video, or the Gemini app). **Output must be 9:16 to
    match the still.** Use the Veo template and rules in `GEMINI.md` §7.
