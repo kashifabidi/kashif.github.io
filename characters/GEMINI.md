@@ -193,6 +193,10 @@ Veo rules (learned from the first test clips):
   characters talk, generate the first speaker's clip, then use Flow's
   **Extend** for the second speaker, and say the other character's mouth
   stays closed.
+- **Never ask Veo to cut a face at the frame edge.** It invents a beam, a
+  shelf or an on-screen monitor to explain it (EP01 shot 2, twice). Animate
+  the full uncropped scene instead, then crop the video in the edit with the
+  same crop box as the still. Generate at 1080p so the crop stays sharp.
 - **Frame-edge cuts invite fake objects.** When a face is cut by the top of
   the frame, Veo may invent a beam or shelf to explain it. Describe the view
   as clear and open, and check the top edge in every frame.

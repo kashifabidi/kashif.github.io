@@ -22,7 +22,8 @@ master's pixels.
 | Still A master v2 | ✅ Approved | `shots/EP01_A_master.png` | Mo re-added to the Lanky plate. Mo's head at Lanky's lower lip/chin, height ratio 0.86 (target 0.87). Duplicate clipboard removed with a one-change edit. Lanky unchanged |
 | Still A | ✅ Approved | `shots/EP01_A.png` | Crop at x 168, y 346, 513 × 912 (9:16). Top edge just under Lanky's nose |
 | Shot 2 video v1 (Flow) | ❌ Rejected | | 720×1280 ✅, identity ✅, Mo's look-up beat ✅, props ✅. But Veo added a wobbling grey beam across the top covering Lanky's face, and Lanky said both lines ("Is it recording? Where's your head?"), both before Mo looked up |
-| Shot 2a (Lanky's line + Mo's look-up) | ⏳ Next | | One speaker per clip |
+| Shot 2a v1 (from cropped Still A) | ❌ Rejected | | 9:16 ✅, single line ✅, Mo's look-up ✅. But Veo invented an editing screen across the top showing Lanky's full face, plus a laptop with a stranger. Lesson: never ask Veo to cut a face at the frame edge |
+| Shot 2a v2 (from uncropped master, crop in post) | ⏳ Next | | Animate full scene at 1080p; director crops the video with the Still A crop box |
 | Shot 2b (Extend: Mo's line) | ⏳ Waiting | | |
 | Still A | ⏳ After anchors | | |
 | Still A0 | ⏳ Waiting | | After Still A |
