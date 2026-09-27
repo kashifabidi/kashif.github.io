@@ -104,7 +104,7 @@ def main():
                     "[1:a]aresample=48000,aformat=channel_layouts=stereo,highpass=f=80,lowpass=f=6000,volume=0.6[bed];"
                     "[0:a][bed]amix=inputs=2:duration=first:normalize=0,"
                     "loudnorm=I=-16:TP=-1.5:LRA=9[a]",
-                    "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "17", "-preset", "slow",
+                    "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-b:v", "3200k", "-maxrate", "3600k", "-bufsize", "7000k", "-preset", "slow",
                     "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", out], check=True)
     print("wrote", out)
 
