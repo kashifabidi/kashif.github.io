@@ -3,7 +3,7 @@
 set -e
 cd "$(dirname "$0")/../shots/video"
 FF=${FFMPEG:-$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())")}
-CLIPS=(EP01_SH01_final EP01_SH02a_final EP01_SH02b_final EP01_SH02c_final EP01_SH03a_final EP01_SH03b_final EP01_SH03c_final EP01_SH04a_final EP01_SH04c_final)
+CLIPS=(EP01_SH01_final EP01_SH02a_final EP01_SH02b_final EP01_SH02c_final EP01_SH03a_final EP01_SH03b_final EP01_SH03c_final EP01_SH04a_final EP01_SH04c_final EP01_SH05a_final)
 ARGS=(); F=""; N=0
 for c in "${CLIPS[@]}"; do
   ARGS+=(-i "$c.mp4")
